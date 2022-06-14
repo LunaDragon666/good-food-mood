@@ -1,7 +1,7 @@
 div#container {
     display: flex;
     flex-direction: row;
-    height: 6vh;
+    height: 7vh;
 }
   
 input[type=search] {  
@@ -13,10 +13,10 @@ input[type=search] {
   
   input[type=search] {
     margin: 0;
-    padding: 0 10px;
+    padding: 0 20px;
     background-color: #f8f8f8;
     border: 0;
-    height: 6vh;
+    height: 7vh;
   }
   
   button {
