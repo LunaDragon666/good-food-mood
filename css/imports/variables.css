@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Averta-Regular';
+    src: url(../../fonts/Averta-Regular.otf) format("opentype");
+  }
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -5,7 +10,8 @@
 }
 
 html {
-    font-family: sans-serif;
+    font-family: 'Averta-Regular';
+    letter-spacing: 1.25px;
 }
 
 h1 {
