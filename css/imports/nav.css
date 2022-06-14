@@ -22,7 +22,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 0vh;
+    height: 10vh;
     
     transition: height .0s ease-out .4s, opacity .2s ease-out .2s, padding-left .2s ease-in 0s;
     opacity: 0;
