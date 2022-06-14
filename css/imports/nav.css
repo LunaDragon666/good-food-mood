@@ -137,7 +137,7 @@
 /* ============================
     FOR LARGER SCREEN SIZES
 ============================= */
-@media screen and (min-width: 991px){
+@media screen and (min-width: 991px) {
     .drop-trigger,
     .nav-revert {
         display: none;
