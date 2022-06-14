@@ -1,0 +1,33 @@
+div#container {
+    display: flex;
+    flex-direction: row;
+    height: 6vh;
+}
+  
+input[type=search] {  
+    width: 100%;
+    height: 35px;
+    font-family: inherit;
+    font-size: inherit;
+}
+  
+  input[type=search] {
+    margin: 0;
+    padding: 0 10px;
+    background-color: #f8f8f8;
+    border: 0;
+    height: 6vh;
+  }
+  
+  button {
+    border: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0 20px;
+    color: #fff;
+    background-color: #f58712;
+    font-size: 24px;
+    font-weight: bold;
+    width: 100px;
+    white-space: nowrap;
+  }
