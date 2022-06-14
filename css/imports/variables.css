@@ -9,6 +9,16 @@
 	padding: 0;
 }
 
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 html {
     font-family: 'Averta-Regular';
     letter-spacing: 1.25px;
