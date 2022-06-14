@@ -1,3 +1,7 @@
+.home-content {
+  padding: 1.4rem;
+}
+
 #container {
     display: flex;
     flex-direction: row;
