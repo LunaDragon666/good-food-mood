@@ -59,12 +59,31 @@
         <!-- PAGE CONTENT HERE -->
         <section class="home-content">
             <h2>Recipes list</h2>
-            <div class="content-list"></div>
+                <div id="slider-container">
+                  <span onclick="slideRight()" class="btn"></span>
+                  <!-- API Call -->
+                    <div id="slider">
+                    <!-- <div class="loader"></div> -->
+                      <div class="slide"><span>1</span></div>
+                      <div class="slide"><span>2</span></div>
+                      <div class="slide"><span>3<span></div>
+                      <div class="slide"><span>4</span></div>
+                      <div class="slide"><span>5</span></div>
+                      <div class="slide"><span>6</span></div>
+                      <div class="slide"><span>7</span></div>
+                      <div class="slide"><span>8</span></div>
+                      <div class="slide"><span>9</span></div>
+                      <div class="slide"><span>10</span></div>
+                  </div>
+                  <span onclick="slideLeft()" class="btn"></span>
+                </div>
         </section>
     </div>
         <!-- FOOTER -->
         <footer>
             2022 © Monika Lie 
         </footer>
+        <!-- JavaScript File(s) -->
+        <script src="../js/index.js"></script>
     </body>
 </html>
