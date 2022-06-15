@@ -1,11 +1,11 @@
 .home-content {
-  padding: 1.4rem;
+  padding: 1.5rem 1.4rem 3rem;
 }
 
 #container {
     display: flex;
     flex-direction: row;
-    height: 6vh;
+    height: 75px;
 }
   
 input[type=search] {  
@@ -20,7 +20,7 @@ input[type=search] {
     padding: 0 20px;
     background-color: #f8f8f8;
     border: 0;
-    height: 6vh;
+    height: 75px;
   }
   
   button {
