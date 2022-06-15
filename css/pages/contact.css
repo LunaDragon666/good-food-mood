@@ -1,6 +1,72 @@
-@import "imports/variables.css";
-@import "imports/nav.css";
-@import "imports/layout.css";
-@import "imports/header.css";
-@import "imports/footer.css";
+@import "../imports/variables.css";
+@import "../imports/nav.css";
+@import "../imports/layout.css";
+@import "../imports/footer.css";
 
+.form-control {
+  width: 100%;
+  margin-bottom: 2rem;
+  padding: 1.2rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  border: 1px solid #dbdbdb;
+  letter-spacing: 1px;
+}
+
+.form-control::placeholder {
+  color: rgb(92, 92, 92);
+  font-weight: bold;
+}
+
+.message {
+  resize: vertical;
+  font-family: inherit;
+  font-size: inherit;
+  min-height: 15rem;
+}
+
+.btn {
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.btn:hover {
+  background-color: #fec810;
+}
+
+.btn:active {
+  box-shadow: 0px 0px 0px 4px rgba(254, 209, 54, 0.6);
+}
+
+@media (min-width: 991px) {
+  form {
+    display: grid;
+    grid-gap: 2.4rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .form-control {
+    width: auto;
+    margin: 0;
+  }
+
+  .message {
+    grid-column: 2;
+    grid-row: 1 / span 3;
+  }
+
+  .btn {
+    justify-self: center;
+    grid-column: span 2;
+    width: 150px !important;
+  }
+}
