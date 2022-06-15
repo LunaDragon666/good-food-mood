@@ -20,13 +20,13 @@ function checkWidth() {
 }
 
 function setParams(w) {
-    if (w < 551) {
+    if (w < 600) {
         slidesPerPage = 1;
     } else {
-        if (w < 901) {
+        if (w < 991) {
             slidesPerPage = 2;
         } else {
-            if (w < 1101) {
+            if (w < 1024) {
                 slidesPerPage = 3;
             } else {
                 slidesPerPage = 4;
