@@ -1,16 +1,16 @@
-var container = document.getElementById('slider-container')
-var slider = document.getElementById('slider');
-var slides = document.getElementsByClassName('slide').length;
-var buttons = document.getElementsByClassName('btn');
+const container = document.getElementById('slider-container')
+const slider = document.getElementById('slider');
+const slides = document.getElementsByClassName('slide').length;
+const buttons = document.getElementsByClassName('btn');
 
 
-var currentPosition = 0;
-var currentMargin = 0;
-var slidesPerPage = 0;
-var slidesCount = slides - slidesPerPage;
-var containerWidth = container.offsetWidth;
-var prevKeyActive = false;
-var nextKeyActive = true;
+let currentPosition = 0;
+let currentMargin = 0;
+let slidesPerPage = 0;
+let slidesCount = slides - slidesPerPage;
+let containerWidth = container.offsetWidth;
+let prevKeyActive = false;
+let nextKeyActive = true;
 
 window.addEventListener("resize", checkWidth);
 
