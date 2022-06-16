@@ -127,6 +127,10 @@ input[type=search] {
   }
   
   @media only screen and (max-width: 600px) {
+
+    #slider-container #slider .slide {
+      height: 75%;
+    }
   
     #slider-container #slider .slide {
       width: calc(10% - 20px);
