@@ -3,7 +3,6 @@ const slider = document.getElementById('slider');
 const slides = document.getElementsByClassName('slide').length;
 const buttons = document.getElementsByClassName('btn');
 
-
 let currentPosition = 0;
 let currentMargin = 0;
 let slidesPerPage = 0;
