@@ -111,14 +111,22 @@ input[type=search] {
   }
   
   @media only screen and (max-width: 1280px) {
+
+    #slider-container {
+      height: 340px;
+    }
   
     #slider-container #slider .slide {
-      width: calc(3.3333333% - 20px);
+      width: calc(2.5% - 20px);
     }
+
+    .slide img {
+      height: 300px;
+  }
   
   }
   
-  @media only screen and (max-width: 991px) {
+  @media only screen and (max-width: 1024px) {
   
     #slider-container #slider .slide {
       width: calc(5% - 20px);
