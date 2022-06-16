@@ -26,11 +26,8 @@ function setParams(w) {
         if (w < 991) {
             slidesPerPage = 2;
         } else {
-            if (w < 1024) {
-                slidesPerPage = 3;
-            } else {
                 slidesPerPage = 4;
-            }
+
         }
     }
     slidesCount = slides - slidesPerPage;
