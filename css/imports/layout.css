@@ -113,7 +113,11 @@ input[type=search] {
   @media only screen and (max-width: 1280px) {
 
     #slider-container {
-      height: 340px;
+      height: 300px;
+    }
+
+    #slider-container #slider .slide {
+      height: 89%;
     }
   
     #slider-container #slider .slide {
@@ -121,16 +125,29 @@ input[type=search] {
     }
 
     .slide img {
-      height: 300px;
+      height: 250px;
   }
   
   }
   
   @media only screen and (max-width: 1024px) {
+
+    #slider-container {
+      height: 340px;
+    }
+
+    #slider-container #slider .slide {
+      height: 93%;
+    }
+  
   
     #slider-container #slider .slide {
       width: calc(5% - 20px);
     }
+
+    .slide img {
+      height: 300px;
+  }
   
   }
   
