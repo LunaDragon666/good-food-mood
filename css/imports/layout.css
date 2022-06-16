@@ -151,6 +151,10 @@ input[type=search] {
     .slide img {
       height: 300px;
   }
+
+  #slider-container #slider .slide .span {
+    bottom: 210px;
+  }
   
   }
 
