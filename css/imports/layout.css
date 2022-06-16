@@ -128,8 +128,16 @@ input[type=search] {
   
   @media only screen and (max-width: 600px) {
 
+    #slider-container {
+      height: 350px;
+    }
+
     #slider-container #slider .slide {
       height: 75%;
+    }
+
+    #slider-container #slider {
+      height: 35%;
     }
   
     #slider-container #slider .slide {
