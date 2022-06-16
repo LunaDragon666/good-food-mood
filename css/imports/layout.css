@@ -37,7 +37,7 @@ input[type=search] {
   }
 
   #slider-container {
-    height: 400px;
+    height: 450px;
     background: #54d5e4;
     position: relative;
     overflow: hidden;
@@ -85,11 +85,19 @@ input[type=search] {
     display: grid;
     place-items: center;
   }
-  
-  #slider-container #slider .slide span {
+
+  #slider-container #slider .slide .span {
+    background-color: rgba(255, 187, 0, 0.75);
     color: white;
-    font-size: 150px;
+    padding: 2rem;
+    position: absolute;
   }
+
+  .slide img {
+    width: 100%;
+    height: 403px;
+}
+
   
   @media only screen and (min-width: 1280px) {
   
