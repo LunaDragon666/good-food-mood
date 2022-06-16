@@ -41,7 +41,7 @@ input[type=search] {
     background: #54d5e4;
     position: relative;
     overflow: hidden;
-    padding: 15px 10px;
+    padding: 10px 10px;
   }
   
   #slider-container .btn {
@@ -69,6 +69,7 @@ input[type=search] {
   #slider-container .btn:last-of-type {
     transform: rotate(135deg);
     right: 10px;
+    z-index: 9999;
   }
   
   #slider-container #slider {
@@ -79,7 +80,7 @@ input[type=search] {
   }
   
   #slider-container #slider .slide {
-    height: 96%;
+    height: 93%;
     margin: auto 10px;
     background-color: #a847a4;
     display: grid;
@@ -90,7 +91,8 @@ input[type=search] {
     background-color: rgba(255, 187, 0, 0.75);
     color: white;
     padding: 2rem;
-    position: absolute;
+    position: relative;
+    bottom: 235px;
   }
 
   .slide img {
@@ -127,6 +129,10 @@ input[type=search] {
   
     #slider-container #slider .slide {
       width: calc(10% - 20px);
+    }
+
+    #slider-container #slider {
+      width: 1200%;
     }
   
   }
