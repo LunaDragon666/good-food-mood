@@ -38,7 +38,7 @@ input[type=search] {
 
   #slider-container {
     height: 450px;
-    background: #54d5e4;
+    background: #F5F5F5;
     position: relative;
     overflow: hidden;
     padding: 4px 20px;
@@ -102,11 +102,9 @@ input[type=search] {
 
   
   @media only screen and (min-width: 1280px) {
-  
     #slider-container #slider .slide {
       width: calc(2.5% - 20px);
     }
-  
   }
   
   @media only screen and (max-width: 1280px) {
@@ -196,7 +194,6 @@ input[type=search] {
   #slider-container #slider .slide .span {
     bottom: 210px;
   }
-  
   }
 
   /* 
