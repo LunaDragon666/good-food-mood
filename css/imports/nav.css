@@ -3,6 +3,10 @@
     src: url(../../fonts/Apricot.otf) format("opentype");
   }
 
+  .logo-wrap {
+    width: 333px;
+}
+
 .main-header {
     width: 100%;
     background: #01403A;
