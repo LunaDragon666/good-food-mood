@@ -1,6 +1,11 @@
+@font-face {
+    font-family: 'Apricot';
+    src: url(../../fonts/Apricot.otf) format("opentype");
+  }
+
 .main-header {
     width: 100%;
-    background: rgb(50,50,50);
+    background: #01403A;
 }
 
 .menu-wrap {
@@ -36,7 +41,7 @@
     display: block;
     padding: 7px 10px;
     margin: 5px auto;
-    color: rgb(0,0,0);
+    color: #352711;
     font-size: 20px;
     width: 100%;
     text-align: center;
@@ -96,7 +101,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255,255,255,0);
+    background: #F2C36B;
     z-index: 1;
 }
 
@@ -111,7 +116,7 @@
 }
 
 #nav-tog:checked ~ .drop-trigger .btn-bar {
-    background: rgb(30,30,30);
+    background: #352711;
     top: 50%;
 }
 
