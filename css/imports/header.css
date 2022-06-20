@@ -14,18 +14,51 @@
     height: 400px;
 }
 
-.h1 {
-    color: #fff;
-    font-family: 'Apricot';
-    font-size: 36px;
-    padding: 0 1rem;
+.header-content {
     position: absolute;
-    top: 17.5rem;
-    left: 2.5rem;
+    top: 13rem;
+    left: 3rem;
+}
+
+.header-content h1 {
+    font-family: 'Averta-Regular';
+    font-size: 36px;
+    text-transform: capitalize;
+}
+
+.header-content span {
+    color: white;
+    font-size: 20px;
+}
+
+.header-content hr {
+    margin-top: .25rem;
+}
+
+hr{
+    border: none;
+}
+hr:after{
+    content: '∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿';
+    /* Ratio -> font-size/letter-spacing = 6.25 */
+    letter-spacing: -6.25px;
+    font-size: 40px;
 }
 
 @media screen and (min-width: 991px) {
     .header-banner {
         height: 600px;
+    }
+    .header-content h1 {
+        font-size: 50px;
+    }
+    .header-content span {
+        font-size: 25px;
+    }
+    .header-content hr {
+        margin-top: 1rem;
+    }
+    hr:after{
+        content: '∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿';
     }
 }
