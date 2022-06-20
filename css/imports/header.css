@@ -1,6 +1,12 @@
+@font-face {
+    font-family: 'Apricot';
+    src: url(../../fonts/Apricot.otf) format("opentype");
+  }
+
+
 .header-banner {
-    background-color: #333;
-    background-image: url("../../img/header.jpg");
+    background-color: #91A646;
+    /* background-image: url("../../img/header.jpg"); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -9,8 +15,9 @@
 }
 
 .h1 {
-    background-color: rgba(255, 187, 0, 0.75);
     color: #fff;
+    font-family: 'Apricot';
+    font-size: 36px;
     padding: 0 1rem;
     position: absolute;
     top: 17.5rem;
