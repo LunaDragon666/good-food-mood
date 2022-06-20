@@ -37,7 +37,7 @@ input[type=search] {
   }
 
   #slider-container {
-    height: 450px;
+    height: 440px;
     background: white;
     position: relative;
     overflow: hidden;
@@ -47,16 +47,16 @@ input[type=search] {
   #slider-container .btn {
     cursor: pointer;
     position: absolute;
-    top: calc(12% - 54px);
-    height: 100%;
+    top: calc(9% - 20px);
+    height: 91%;
     width: 30px;
-    background: #F2C36B;
+    background: #ee911f;
     z-index: 1;
     transition: .5s;
   }
   
   #slider-container .btn:hover {
-    background: #E3A227;
+    background: #e86007;
   }
   
   #slider-container .btn.inactive {
@@ -82,23 +82,36 @@ input[type=search] {
   }
   
   #slider-container #slider .slide {
-    height: 100%;
+    cursor: pointer;
+    height: 91%;
     margin: auto 10px;
     background-color: #a847a4;
     display: grid;
+    position: relative;
+    transition: .5s;
   }
+
+.slide {
+  box-shadow: rgb(0 0 0 / 5%) 0px 1px 3px 0px;
+}
+
+.slide:hover {
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+}
 
   #slider-container #slider .slide .span {
     background-color: rgb(255 255 255 / 75%);
     color: #352711;
-    padding: 2rem;
-    position: relative;
-    bottom: 100px;
+    padding: 1rem 2rem 2rem;
+    position: absolute;
+    top: 310px;
+    width:100%;
+    overflow: visible;
   }
 
   .slide img {
     width: 100%;
-    height: 450px;
+    height: 400px;
     object-fit: cover;
 }
 
@@ -111,15 +124,16 @@ input[type=search] {
   
   @media only screen and (max-width: 1280px) {
     #slider-container .btn {
-      top: calc(12% - 36px);
+      top: calc(11% - 20px);
+      height: 89.75%;
     }
 
     #slider-container {
-      height: 300px;
+      height: 337px;
     }
 
     #slider-container #slider .slide {
-      height: 100%;
+      height: 90%;
     }
   
     #slider-container #slider .slide {
@@ -127,26 +141,27 @@ input[type=search] {
     }
 
     .slide img {
-      height: 300px;
+      height: 303px;
   }
 
   #slider-container #slider .slide .span {
-    bottom: 100px;
+    top: 213px;
   }
   
   }
   
   @media only screen and (max-width: 1024px) {
     #slider-container .btn {
-      top: calc(12% - 41px);
+      top: calc(17% - 43px);
+      height: 90.25%;
     }
 
     #slider-container {
-      height: 340px;
+      height: 359px;
     }
 
     #slider-container #slider .slide {
-      height: 100%;
+      height: 90%;
     }
   
   
@@ -155,18 +170,19 @@ input[type=search] {
     }
 
     .slide img {
-      height: 340px;
+      height: 324px;
   }
 
   #slider-container #slider .slide .span {
-    bottom: 100px;
+    top: 234px;
   }
   
   }
   
   @media only screen and (max-width: 600px) {
     #slider-container .btn {
-      top: calc(12% - 42px);
+      height: 100%;
+      top: calc(10% - 35px);
     }
 
     #slider-container {
@@ -194,7 +210,7 @@ input[type=search] {
   }
 
   #slider-container #slider .slide .span {
-    bottom: 100px;
+    top: 260px;
   }
   }
 
@@ -222,7 +238,7 @@ input[type=search] {
   */
 
   .subscribe-field {
-    background: #f5a012;
+    background: #D97F11;
     color: white;
     font-size: 0.75rem;
     padding: .6rem 1.4rem;
@@ -233,4 +249,11 @@ input[type=search] {
     position: absolute;
     top: calc(50% - 0px);
     left: 6px;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: .25rem;
 }
