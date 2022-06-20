@@ -3,6 +3,11 @@
     src: url(../../fonts/Averta-Regular.otf) format("opentype");
   }
 
+  @font-face {
+    font-family: 'Apricot';
+    src: url(../../fonts/Apricot.otf) format("opentype");
+  }
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -27,11 +32,13 @@ html {
 
 h1 {
     color: white;
-    font-family: 'Apricot';
     font-size: 26px;
+    font-family: 'Apricot';
 }
 
 h2 {
+    font-family: 'Apricot';
+    font-size: 35px;
     margin-bottom: 1rem;
 }
 
