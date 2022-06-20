@@ -39,7 +39,7 @@ hr{
     border: none;
 }
 hr:after{
-    content: '∿∿∿∿∿∿∿∿∿∿∿∿∿';
+    content: '∿∿∿∿∿∿∿∿∿∿∿∿';
     /* Ratio -> font-size/letter-spacing = 6.25 */
     letter-spacing: -5.1px;
     font-size: 30px;
