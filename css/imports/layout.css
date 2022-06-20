@@ -41,36 +41,33 @@ input[type=search] {
     background: #54d5e4;
     position: relative;
     overflow: hidden;
-    padding: 10px 10px;
+    padding: 4px 20px;
   }
   
   #slider-container .btn {
     cursor: pointer;
     position: absolute;
-    top: calc(50% - 30px);
-    height: 30px;
+    top: calc(12% - 54px);
+    height: 100%;
     width: 30px;
-    border-left: 8px solid pink;
-    border-top: 8px solid pink;
+    background: #808080;
     z-index: 1;
   }
   
   #slider-container .btn:hover {
-    transform: scale(1.2);
+    background: #ababab;
   }
   
   #slider-container .btn.inactive {
-    border-color: rgb(153, 121, 126)
+    background-color: rgb(153, 121, 126)
   }
   
   #slider-container .btn:first-of-type {
-    transform: rotate(-45deg);
-    left: 10px
+    left: 0;
   }
   
   #slider-container .btn:last-of-type {
-    transform: rotate(135deg);
-    right: 10px;
+    right: 0;
     z-index: 9999;
   }
   
@@ -99,7 +96,7 @@ input[type=search] {
 
   .slide img {
     width: 100%;
-    height: 403px;
+    height: 411px;
     object-fit: cover;
 }
 
@@ -113,6 +110,9 @@ input[type=search] {
   }
   
   @media only screen and (max-width: 1280px) {
+    #slider-container .btn {
+      top: calc(12% - 36px);
+    }
 
     #slider-container {
       height: 300px;
@@ -127,7 +127,7 @@ input[type=search] {
     }
 
     .slide img {
-      height: 250px;
+      height: 260px;
   }
 
   #slider-container #slider .slide .span {
@@ -137,6 +137,9 @@ input[type=search] {
   }
   
   @media only screen and (max-width: 1024px) {
+    #slider-container .btn {
+      top: calc(12% - 41px);
+    }
 
     #slider-container {
       height: 340px;
@@ -152,7 +155,7 @@ input[type=search] {
     }
 
     .slide img {
-      height: 300px;
+      height: 309px;
   }
 
   #slider-container #slider .slide .span {
@@ -162,13 +165,16 @@ input[type=search] {
   }
   
   @media only screen and (max-width: 600px) {
+    #slider-container .btn {
+      top: calc(12% - 42px);
+    }
 
     #slider-container {
       height: 350px;
     }
 
     #slider-container #slider .slide {
-      height: 75%;
+      height: 67%;
     }
 
     #slider-container #slider {
@@ -221,4 +227,11 @@ input[type=search] {
     color: white;
     font-size: 0.75rem;
     padding: .6rem 1.4rem;
+}
+
+.btn i {
+    font-size: 35px;
+    position: absolute;
+    top: calc(50% - 0px);
+    left: 6px;
 }
