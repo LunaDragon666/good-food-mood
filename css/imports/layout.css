@@ -103,7 +103,7 @@ input[type=search] {
     color: #352711;
     padding: 1rem 2rem 2rem;
     position: absolute;
-    top: 310px;
+    top: 306px;
     width:100%;
     overflow: visible;
   }
@@ -144,7 +144,7 @@ input[type=search] {
   }
 
   #slider-container #slider .slide .span {
-    top: 213px;
+    top: 209px;
   }
   
   }
@@ -173,7 +173,7 @@ input[type=search] {
   }
 
   #slider-container #slider .slide .span {
-    top: 234px;
+    top: 230px;
   }
   
   }
