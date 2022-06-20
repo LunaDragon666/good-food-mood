@@ -71,7 +71,6 @@ input[type=search] {
   
   #slider-container .btn:last-of-type {
     right: 0;
-    z-index: 9999;
   }
   
   #slider-container #slider {
