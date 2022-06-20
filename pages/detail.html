@@ -4,7 +4,7 @@
         <title></title>
         <meta name="description" content="Homepage for Good Food Mood" />
         <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0"/>
-        <link href="../css/pages/contact.css" rel="stylesheet" />
+        <link href="../css/pages/detail.css" rel="stylesheet" />
         <link rel="icon" href="data:;base64,=" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     </head>
@@ -52,12 +52,40 @@
         <!-- PAGE CONTENT HERE -->
         <section class="home-content">
             <!-- API Call -->
-            <h2>Eggwraps</h2>
+            <div class="card">
+			    <img class="modal-target" src="../img/logo/eggwraps.jpg" alt="Eggwraps" />
+                                                        <!-- The Modal -->
+<div id="modal" class="modal">
+    <span id="modal-close" class="modal-close">&times;</span>
+    <img id="modal-content" class="modal-content">
+    <div id="modal-caption" class="modal-caption"></div>
+  </div>
+				<article class="card-content">
+                    <h2>Eggwraps</h2>
+                    <p>
+                       Eggwrap is stunningly easy to make and it's also an ingenious meal for you who eat low carb or ketogenic. 
+                       Egg wraps can be filled with delicious toppings of the variety you prefer or you can fill it with vegetables, 
+                       meat or fish - or a combinations of those if you prefer.
+                    </p>
+                    <div class="tags">
+                        <span class="tag">
+                            <i class="fa fa-clock"></i> 15 min.
+                        </span>
+                        <span class="tag">Lowcarb</span>
+                        <span class="tag">
+                            <i class="fa fa-exclamation-triangle"></i> Egg
+                        </span>
+                    </div>
+				</article>
+			</div>
             <!-- <div class="loader"></div> -->
+        </section>
     </div>
         <!-- FOOTER -->
         <footer>
             2022 © Monika Lie 
         </footer>
+            <!-- JavaScript File(s) -->
+            <script src="../js/detail.js"></script>
     </body>
 </html>
