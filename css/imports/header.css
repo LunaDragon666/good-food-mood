@@ -11,7 +11,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 300px;
+    height: 250px;
 }
 
 .header-content {
@@ -47,7 +47,7 @@ hr:after {
 
 @media screen and (min-width: 991px) {
     .header-banner {
-        height: 450px;
+        height: 400px;
     }
     .header-content h1 {
         font-size: 50px;
