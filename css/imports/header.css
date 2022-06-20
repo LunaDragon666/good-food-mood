@@ -6,12 +6,12 @@
 
 .header-banner {
     background-color: #91A646;
-    /* background-image: url("../../img/header.jpg"); */
+    background-image: url("../../img/header.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 400px;
+    height: 300px;
 }
 
 .h1 {
@@ -21,11 +21,11 @@
     padding: 0 1rem;
     position: absolute;
     top: 17.5rem;
-    left: 5rem;
+    left: 2.5rem;
 }
 
 @media screen and (min-width: 991px) {
     .header-banner {
-        height: 600px;
+        height: 500px;
     }
 }
