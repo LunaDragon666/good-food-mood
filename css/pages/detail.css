@@ -3,6 +3,11 @@
 @import "../imports/layout.css";
 @import "../imports/footer.css";
 
+@font-face {
+  font-family: 'Averta-Regular';
+  src: url(../../fonts/Averta-Regular.otf) format("opentype");
+}
+
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     display: flex;
@@ -10,6 +15,7 @@
   }
 
   .card h2 {
+    font-family: 'Averta-Regular';
       font-size: 24px;
     text-transform: uppercase;
   }
