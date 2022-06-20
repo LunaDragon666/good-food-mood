@@ -237,47 +237,6 @@ input[type=search] {
 }
   */
 
-  .subscribe-field {
-    background: #D97F11;
-    color: white;
-    font-size: 0.9rem;
-    padding: 1.6rem 1.4rem;
-    flex-flow: column nowrap;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 20px;
-}
-
-.sub-btn {
-  font-size: inherit;
-  background: #ff8900;
-  padding: .33rem 1rem;
-  width: 100px;
-}
-
-.sub input {
-  border: none;
-  font-family: inherit;
-  padding: .33rem .5rem;
-}
-
-.triangle {
-	position: absolute; 
-	border-left:20px solid transparent;
-	border-right:20px solid transparent;
-	border-top: 20px solid #D97F11;
-	margin-top: -1px;
-	left: 50%;
-}
-
-.ad {
-  font-size: 18px;
-  text-decoration: underline;
-}
-
 .btn i {
     font-size: 35px;
     position: absolute;
