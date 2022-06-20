@@ -45,12 +45,14 @@ input[type=search] {
   }
   
   #slider-container .btn {
+    cursor: pointer;
     position: absolute;
     top: calc(50% - 30px);
     height: 30px;
     width: 30px;
     border-left: 8px solid pink;
     border-top: 8px solid pink;
+    z-index: 1;
   }
   
   #slider-container .btn:hover {
@@ -84,7 +86,7 @@ input[type=search] {
     margin: auto 10px;
     background-color: #a847a4;
     display: grid;
-    place-items: center;
+
   }
 
   #slider-container #slider .slide .span {
