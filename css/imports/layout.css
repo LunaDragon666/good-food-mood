@@ -314,7 +314,7 @@ select option {
 } 
 
 select#categories {
-  max-width: 95%;
-  min-width: 95%;
-  width: 95% fit-content !important;
+  max-width: 100%;
+  min-width: 100%;
+  width: 100% fit-content !important;
 }
