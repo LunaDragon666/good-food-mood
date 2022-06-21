@@ -1,5 +1,5 @@
 .home-content {
-  padding: 1.5rem 1.4rem 3rem;
+  padding: 1.5rem 1.4rem 2rem;
 }
 
 #container {
@@ -188,6 +188,15 @@ input[type=search] {
       margin-bottom: 2.5rem;
       width: 100% !important;
     }
+    
+    .sub-form {
+    flex-direction: column !important;
+    gap: 10px;
+    margin-top: 2.5rem;
+}
+    .sub-form, .sub-btn {
+            width: 100% !important;
+    }
 
     #slider-container .btn {
       height: 100%;
@@ -317,4 +326,48 @@ select#categories {
   max-width: 100%;
   min-width: 100%;
   width: 100% fit-content !important;
+}
+
+.subscribe-field {
+  background: #F2C36B;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1.75rem 5rem;
+    text-align: center;
+}
+
+.subscribe-field h2 {
+  margin-bottom: .5rem;
+}
+
+.subscribe-field p {
+  margin-top: 1rem;
+}
+
+b {
+  text-decoration: underline;
+}
+
+.sub-form {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 2.5rem;
+}
+
+.sub-form input {
+    border: none;
+    font-family: inherit;
+    padding: .5rem .75rem;
+}
+
+.sub-btn {
+    background: #ee911f;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: .5rem .75rem;
+    text-transform: uppercase;
+    width: 120px;
 }
