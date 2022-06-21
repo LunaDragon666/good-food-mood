@@ -8,7 +8,7 @@ footer {
     line-height: 20px;
     justify-content: space-between;
     flex-shrink: 0;
-    padding: 3rem 1.4rem;
+    padding: 3.2rem 1.4rem;
     text-align: center;
 }
 
@@ -24,6 +24,7 @@ footer #links {
 }
 
 .top-btn {
+    background: #e86007;
     border-radius: 5px;
     height: 40px;
     width: 45px;
