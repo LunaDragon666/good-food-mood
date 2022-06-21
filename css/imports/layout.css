@@ -360,7 +360,7 @@ b {
 .sub-form input {
     border: none;
     font-family: inherit;
-    padding: .5rem .75rem;
+    padding: 1rem;
 }
 
 .sub-btn {
