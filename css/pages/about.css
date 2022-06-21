@@ -1,6 +1,7 @@
 @import "../imports/variables.css";
 @import "../imports/nav.css";
 @import "../imports/layout.css";
+@import "../imports/header.css";
 @import "../imports/footer.css";
 
 .home-content {
@@ -52,6 +53,7 @@ b, .big-bold {
 
 h3 {
     font-size: 24px;
+    margin-bottom: -1rem;
 }
 .food-tag {
     padding: .5rem 1rem;
@@ -85,7 +87,22 @@ h3 {
     margin-top: 2rem;
 }
 
+.note {
+    margin-top: -1rem;
+}
+
+.note b {
+    text-decoration: underline;
+}
+
+.note i {
+    color: #e03d31;
+}
+
 @media only screen and (max-width: 768px) {
+    .dietary-iconset {
+        padding-bottom: 4rem;
+    }
     .intro {
         flex-direction: column;
         text-align: center;
@@ -97,4 +114,9 @@ h3 {
     .dietary-iconset, .icon-set {
         text-align: center;
     } 
+    .note {
+        margin-bottom: 1rem;
+        margin-top: 0;
+    }
 }
+
