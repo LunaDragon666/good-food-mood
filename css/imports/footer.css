@@ -24,10 +24,9 @@ footer #links {
 
 .top-btn {
     background: #e86007;
-    border-radius: 5px;
-    height: 40px;
-    width: 45px;
-    padding: 0;
+    color: #352711;
+    border-radius: 10px;
+    padding: .75rem;
 }
 
 .wrapper {
