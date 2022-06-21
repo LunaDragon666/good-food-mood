@@ -40,9 +40,61 @@ b, .big-bold {
     font-size: 20px;
 }
 
+.dietary-iconset {
+    background: #FBF8F3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    padding: 2.5rem 1.5rem 7.5rem;
+}
+
+h3 {
+    font-size: 24px;
+}
+.food-tag {
+    padding: .5rem 1rem;
+}
+
+#diary-free {
+    background: #b5ddff;
+}
+
+#gluten-free {
+    background: #ffd88e;
+}
+
+#low-carb {
+    background: #ffc5c5;
+}
+
+#vegan {
+    background: #618C03;
+    color: white;
+}
+
+#vegetarian {
+    background: #c2c55d;
+}
+
+.icon-set {
+    display: flex;
+    flex-direction: row;
+    gap: 1.4rem;
+    margin-top: 2rem;
+}
+
 @media only screen and (max-width: 600px) {
     .intro {
         flex-direction: column;
         text-align: center;
     }
+    .icon-set {
+        flex-direction: column;
+        width: 100%;
+    }
+    .dietary-iconset, .icon-set {
+        text-align: center;
+    } 
 }
