@@ -1,11 +1,45 @@
 footer {
+    align-items: center;
     background: #001e1b;
     color: white;
     display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    line-height: 20px;
+    justify-content: space-between;
     flex-shrink: 0;
     padding: 3rem 1.4rem;
+    text-align: center;
+}
+
+footer i {
+    font-size: 26px;
+}
+
+footer #links {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.top-btn {
+    border-radius: 5px;
+    height: 40px;
+    width: 45px;
+    padding: 0;
 }
 
 .wrapper {
     flex: 1 0 auto;
+}
+
+@media only screen and (max-width: 1024px) {
+    footer {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .footer:first-child {
+        order: 2;
+    }
 }
