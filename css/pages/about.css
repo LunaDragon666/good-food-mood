@@ -1,5 +1,48 @@
-@import "imports/variables.css";
-@import "imports/nav.css";
-@import "imports/layout.css";
-@import "imports/footer.css";
+@import "../imports/variables.css";
+@import "../imports/nav.css";
+@import "../imports/layout.css";
+@import "../imports/footer.css";
 
+.home-content {
+    padding: 0;
+}
+
+.intro {
+    background: #D7E5DA;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 5rem 1.5rem 8.5rem;
+}
+
+.intro div {
+    max-width: 768px;
+}
+
+.intro p {
+    margin-bottom: 1.2rem;
+}
+
+.intro img {
+    border-radius: 100%;
+    height: 150px;
+    object-fit: cover;
+    width: 150px;
+}
+
+b, .big-bold {
+    text-decoration: none;
+}
+
+.big-bold {
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .intro {
+        flex-direction: column;
+        text-align: center;
+    }
+}
