@@ -198,6 +198,10 @@ input[type=search] {
             width: 100% !important;
     }
 
+    .sub-btn {
+      height: 50px;
+    }
+
     #slider-container .btn {
       height: 100%;
       top: calc(10% - 35px);
