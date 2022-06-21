@@ -8,8 +8,7 @@ footer {
     line-height: 20px;
     justify-content: space-between;
     flex-shrink: 0;
-    padding: 3.2rem 1.4rem;
-    text-align: center;
+    padding: 3.2rem 1.5rem;
 }
 
 footer i {
@@ -39,6 +38,7 @@ footer #links {
     footer {
         flex-direction: column;
         gap: 50px;
+        text-align: center;
     }
     .footer:first-child {
         order: 2;
