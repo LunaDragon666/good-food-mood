@@ -30,7 +30,7 @@
   .card p {
   font-size: 15px;
     line-height: 25px;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
   }
 
   .card-content {
@@ -63,6 +63,9 @@
   color: #e03d31;
 }
 
+.tag-column {
+  display: flex;
+}
 
 .food-info {
     display: flex;
@@ -89,6 +92,7 @@
       }
       .tags {
         flex-direction: column;
+        gap: 15px;
     }
     .food-info {
       font-size: 15px;
