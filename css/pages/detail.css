@@ -93,7 +93,7 @@
           flex-direction: column;
       }
       .card-content {
-        margin-top: -4px;
+        margin-top: -5px;
         padding: 1.25rem 1.25rem 2.5rem;
       }
       .card img {
