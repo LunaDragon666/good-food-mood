@@ -65,6 +65,8 @@
 
 .tag-column {
   display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .food-info {
@@ -92,7 +94,10 @@
       }
       .tags {
         flex-direction: column;
-        gap: 15px;
+        gap: 25px;
+    }
+    .tag {
+      margin-right: 0;
     }
     .food-info {
       font-size: 15px;
