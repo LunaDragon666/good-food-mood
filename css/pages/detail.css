@@ -23,7 +23,7 @@
   }
 
   .card img {
-      height: auto;
+      height: 100%;
       object-fit: cover;
   }
 
@@ -77,15 +77,32 @@
     margin-bottom: 2rem;
 }
 
+.imgy {position: relative;}
+
+.imgy i {
+  background: white;
+  position: absolute;
+  bottom: 0px;
+  font-size: 24px;
+  right: -4px;
+  padding: .75rem .5rem .5rem .75rem;
+}
+
   @media (max-width: 1069px) {
       .card {
           flex-direction: column;
       }
       .card-content {
+        margin-top: -4px;
         padding: 1.25rem 1.25rem 2.5rem;
       }
       .card img {
           width: 100%;
+      }
+      .imgy i {
+        bottom: 4px;
+        padding: .75rem .5rem .5rem .75rem;
+        right: 0px;
       }
       .modal-content {
         width: 100%;
