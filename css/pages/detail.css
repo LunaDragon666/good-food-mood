@@ -30,7 +30,7 @@
   .card p {
   font-size: 15px;
     line-height: 25px;
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
   }
 
   .card-content {
@@ -61,6 +61,7 @@
 .warning {
   background: #ffcbc7;
   color: #e03d31;
+  width: 100%;
 }
 
 .tag-column {
@@ -81,7 +82,7 @@
           flex-direction: column;
       }
       .card-content {
-        padding: 1.25rem 1.25rem 3rem;
+        padding: 1.25rem 1.25rem 2.5rem;
       }
       .card img {
           width: 100%;
