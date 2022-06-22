@@ -80,15 +80,33 @@
 .imgy {position: relative;}
 
 .imgy i {
-  background: white;
+  background-color: rgb(255 255 255 / 75%);
+  cursor: pointer;
   position: absolute;
   bottom: 0px;
   font-size: 24px;
-  right: -4px;
   padding: .75rem .5rem .5rem .75rem;
 }
 
+.recipe-content {
+  display: flex;
+  flex-direction: row;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.recipe-content div:first-child {
+  background: aliceblue;
+  width: 70%;
+}
+
   @media (max-width: 1069px) {
+    .recipe-content {
+      flex-direction: column;
+    }
+    .recipe-content div:first-child {
+      width: 100%;
+    }
       .card {
           flex-direction: column;
       }
