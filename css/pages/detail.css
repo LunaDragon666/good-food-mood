@@ -75,6 +75,9 @@
       .card {
           flex-direction: column;
       }
+      .card-content {
+        padding: 1.25rem 1.25rem 3rem;
+      }
       .card img {
           width: 100%;
       }
@@ -87,6 +90,9 @@
       .tags {
         flex-direction: column;
     }
+    .food-info {
+      font-size: 14px;
+  }
   }
 
   #myImg {
