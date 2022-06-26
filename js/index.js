@@ -45,6 +45,7 @@ getRecipes(api);
 const searchButton = document.querySelector(".button");
 
 searchButton.onclick = function() {
+    document.querySelector(".loading").innerHTML = '<div class="loader"></div>';
     const searchInput = document.querySelector("#search-input").value;
     const newUrl = api + `?search=${searchInput}`;
     recipeList.innerHTML = "";
@@ -55,16 +56,21 @@ searchButton.onclick = function() {
   const categories = document.querySelectorAll(".categories");
 
   categories.forEach(function(category){
+
     category.onclick = function(event){
+        document.querySelector(".loading").innerHTML = '<div class="loader"></div>';
       let newUrl;
       if (event.target.id === "featured") {
         newUrl = api + "?featured=true";
       }
       else {
         const categoryChosen = event.target.value;
-        newUrl = api + `?category=${categoryChosen}`
+        newUrl = api + `?category=${categoryChosen}` 
       }
-      recipeList.innerHTML = " "; 
+      recipeList.innerHTML = ""; 
       getRecipes(newUrl);
     }
   });
+
+  // subscribe field
+  
