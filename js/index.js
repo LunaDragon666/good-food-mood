@@ -1,79 +1,70 @@
-const container = document.getElementById('slider-container')
-const slider = document.getElementById('slider');
-const slides = document.getElementsByClassName('slide').length;
-const buttons = document.getElementsByClassName('btn');
+const api = "https://goodfoodmood.monikalie.no/wp-json/wc/store/products";
+const recipeList = document.querySelector(".recipes");
 
-let currentPosition = 0;
-let currentMargin = 0;
-let slidesPerPage = 0;
-let slidesCount = slides - slidesPerPage;
-let containerWidth = container.offsetWidth;
-let prevKeyActive = false;
-let nextKeyActive = true;
+function displayRecipes(food) { 
+document.querySelector(".loading").innerHTML = "";
 
-window.addEventListener("resize", checkWidth);
-
-function checkWidth() {
-    containerWidth = container.offsetWidth;
-    setParams(containerWidth);
+food.forEach(function(recipe) {
+    recipeList.innerHTML += `
+                            <article class="recipe">
+                            <a href="pages/detail.html">
+                                <div class="img-hover-zoom">
+                                    <img src="${recipe.images[0].src}" alt="${recipe.name}">
+                                </div>
+                                <div class="recipe-info">
+                                    <h3>${recipe.name}</h3>
+                                    <div class="recipe-details">
+                                        <p><i class="fa fa-clock"></i> ${recipe.prices.price} min</p>
+                                        <p><i class="fas fa-fire"></i> ${recipe.prices.regular_price} kcal</p>
+                                    </div>
+                                <div class="cta-btn">
+                                    <a href="pages/detail.html">Get the recipe</a>
+                                </div>
+                                </div>
+                                </a>
+                            </article>
+                          `
+  });
 }
 
-function setParams(w) {
-    if (w < 600) {
-        slidesPerPage = 1;
-    } else {
-        if (w < 991) {
-            slidesPerPage = 2;
-        } else {
-                slidesPerPage = 4;
+async function getRecipes(url) {
+  try {
+  const response = await fetch(url);
+  const recipes = await response.json();
 
-        }
-    }
-    slidesCount = slides - slidesPerPage;
-    if (currentPosition > slidesCount) {
-        currentPosition -= slidesPerPage;
-    };
-    currentMargin = - currentPosition * (100 / slidesPerPage);
-    slider.style.marginLeft = currentMargin + '%';
-    if (currentPosition > 0) {
-        buttons[0].classList.remove('inactive');
-    }
-    if (currentPosition < slidesCount) {
-        buttons[1].classList.remove('inactive');
-    }
-    if (currentPosition >= slidesCount) {
-        buttons[1].classList.add('inactive');
-    }
+  displayRecipes(recipes);
+
+} catch(error) {
+    recipeList.innerHTML = theError("Oh no!");
+
+  } 
 }
+getRecipes(api);
 
-setParams();
+// Searchfield
+const searchButton = document.querySelector(".button");
 
-function slideRight() {
-    if (currentPosition != 0) {
-        slider.style.marginLeft = currentMargin + (100 / slidesPerPage) + '%';
-        currentMargin += (100 / slidesPerPage);
-        currentPosition--;
-    };
-    if (currentPosition === 0) {
-        buttons[0].classList.add('inactive');
-    }
-    if (currentPosition < slidesCount) {
-        buttons[1].classList.remove('inactive');
-    }
-};
+searchButton.onclick = function() {
+    const searchInput = document.querySelector("#search-input").value;
+    const newUrl = api + `?search=${searchInput}`;
+    recipeList.innerHTML = "";
+    getRecipes(newUrl);
+  } 
 
-function slideLeft() {
-    if (currentPosition != slidesCount) {
-        slider.style.marginLeft = currentMargin - (100 / slidesPerPage) + '%';
-        currentMargin -= (100 / slidesPerPage);
-        currentPosition++;
-    };
-    if (currentPosition == slidesCount) {
-        buttons[1].classList.add('inactive');
-    }
-    if (currentPosition > 0) {
-        buttons[0].classList.remove('inactive');
-    }
-};
+  // Categories 
+  const categories = document.querySelectorAll(".categories");
 
-// API CALL
+  categories.forEach(function(category){
+    category.onclick = function(event){
+      let newUrl;
+      if (event.target.id === "featured") {
+        newUrl = api + "?featured=true";
+      }
+      else {
+        const categoryChosen = event.target.value;
+        newUrl = api + `?category=${categoryChosen}`
+      }
+      recipeList.innerHTML = " "; 
+      getRecipes(newUrl);
+    }
+  });
