@@ -37,7 +37,6 @@ input[type=search] {
   }
 
 .loading {
-    margin: 2rem 0;
 }
 
   .loader {
@@ -66,7 +65,7 @@ input[type=search] {
   .recipes {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 1rem;
+    gap: 2rem;
     margin-bottom: 1rem;
 }
 
@@ -188,7 +187,7 @@ input[type=search] {
   flex: 1;
   padding: 0 1em;
   color: #352711;
-  background-color: #F2C36B;
+  background-color: #ffe397;
   background-image: none;
   cursor: pointer;
   font-family: inherit;
@@ -222,8 +221,8 @@ option:checked {
 }
 
 select option {
-  background: #ee911f; 
-  box-shadow: inset 20px 20px #ee911f;
+  background: #ffbf48; 
+  box-shadow: inset 20px 20px #ffbf48;
 } 
 
 select#categories {
