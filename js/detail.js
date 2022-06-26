@@ -18,3 +18,19 @@ const span = document.getElementsByClassName("close")[0];
 span.onclick = function() { 
   modal.style.display = "none";
 }
+
+//API 
+const recipeTitle = document.querySelector("title").innerHTML = "Good Food Mood | Recipe";
+
+/*
+const detailContainer = document.querySelector(".product-details");
+const url = new URL(window.location.href);
+const params = url.searchParams;
+const id = params.get("id");
+
+console.log(id);
+
+const theUrl = "https://tgh.monikalie.no/wp-json/wc/store/products/" + id;
+
+console.log(url);
+*/
