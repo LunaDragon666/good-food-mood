@@ -175,7 +175,7 @@ input[type=search] {
 .heading {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: start;
   justify-content: space-between;
 }
 
@@ -201,14 +201,14 @@ input[type=search] {
   position: relative;
   display: flex;
   width: 10em;
-  height: 2em;
+  height: 2.5em;
   overflow: hidden;
 }
 /* Arrow */
 .select::after {
   content: '\25BC';
   position: absolute;
-  top: -9px;
+  top: -5px;
   right: 0;
   padding: 1em;
   background-color: #ee911f;
@@ -221,7 +221,7 @@ option:checked {
 }
 
 select option {
-  background: #ffbf48; 
+  background: #ffbf48;
   box-shadow: inset 20px 20px #ffbf48;
 } 
 
