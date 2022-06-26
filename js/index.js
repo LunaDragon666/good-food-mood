@@ -7,6 +7,7 @@ document.querySelector(".loading").innerHTML = "";
 food.forEach(function(recipe) {
     recipeList.innerHTML += `
                             <article class="recipe">
+                            <!-- <a href="detail.html?id=${recipe.id}"> -->
                             <a href="pages/detail.html">
                                 <div class="img-hover-zoom">
                                     <img src="${recipe.images[0].src}" alt="${recipe.name}">
@@ -73,4 +74,3 @@ searchButton.onclick = function() {
   });
 
   // subscribe field
-  
