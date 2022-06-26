@@ -36,148 +36,104 @@ input[type=search] {
     white-space: nowrap;
   }
 
-  #slider-container {
-    height: 440px;
-    background: white;
-    position: relative;
-    overflow: hidden;
-    padding: 0px 20px;
-  }
-  
-  #slider-container .btn {
-    cursor: pointer;
-    position: absolute;
-    top: calc(9% - 20px);
-    height: 91%;
-    width: 30px;
-    background: #ee911f;
-    z-index: 1;
-    transition: .5s;
-  }
-  
-  #slider-container .btn:hover {
-    background: #e86007;
-  }
-  
-  #slider-container .btn.inactive {
-      background-color: #cccccc;
-      color: #666666;
-      cursor: unset;
-  }
-  
-  #slider-container .btn:first-of-type {
-    left: 0;
-  }
-  
-  #slider-container .btn:last-of-type {
-    right: 0;
-  }
-  
-  #slider-container #slider {
-    display: flex;
-    width: 1000%;
-    height: 100%;
-    transition: all .5s;
-  }
-  
-  #slider-container #slider .slide {
-    cursor: pointer;
-    height: 91%;
-    margin: auto 10px;
-    background-color: #a847a4;
-    display: grid;
-    position: relative;
-    transition: .5s;
-  }
-
-.slide {
-  box-shadow: rgb(0 0 0 / 5%) 0px 1px 3px 0px;
+.loading {
+    margin: 2rem 0;
 }
 
-.slide:hover {
+  .loader {
+    animation: spin 2s linear infinite;
+    border: 15px solid #ffe7bb;
+    border-radius: 50%;
+    border-top: 15px solid #e86007;
+    height: 76px;
+    margin: 0 auto;
+    width: 75px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  /* */
+  .recipes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.recipes img {
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.recipe {
+  box-shadow: rgb(0 0 0 / 5%) 0px 1px 3px 0px;
+  transition: .5s;
+}
+
+.recipe:hover {
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
 }
 
-  #slider-container #slider .slide .span {
-    background-color: rgb(255 255 255 / 75%);
-    color: #352711;
-    padding: 1rem 2rem 2rem;
-    position: absolute;
-    top: 306px;
-    width:100%;
-    overflow: visible;
-  }
-
-  .slide img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
+/* [1] The container */
+.img-hover-zoom {
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
 }
 
-  
-  @media only screen and (min-width: 1280px) {
-    #slider-container #slider .slide {
-      width: calc(2.5% - 20px);
-    }
-  }
-  
-  @media only screen and (max-width: 1280px) {
-    #slider-container .btn {
-      top: calc(11% - 20px);
-      height: 89.75%;
-    }
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+  transition: transform .5s ease;
+}
 
-    #slider-container {
-      height: 337px;
-    }
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+  transform: scale(1.25);
+}
 
-    #slider-container #slider .slide {
-      height: 90%;
-    }
-  
-    #slider-container #slider .slide {
-      width: calc(2.5% - 20px);
-    }
+.recipe-info {
+    background: #fff1cb;
+    margin-top: -5px;
+    padding: 1rem;
+}
 
-    .slide img {
-      height: 303px;
-  }
+.recipe-info a {
+      color: #352711;
+}
 
-  #slider-container #slider .slide .span {
-    top: 209px;
-  }
-  
-  }
-  
-  @media only screen and (max-width: 1024px) {
-    #slider-container .btn {
-      top: calc(17% - 43px);
-      height: 90.25%;
-    }
+.recipe-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
 
-    #slider-container {
-      height: 359px;
-    }
+.cta-btn {
+    background: #ee911f;
+    cursor: pointer;
+    padding: 1rem;
+    text-align: center;
+    transition: .5s;
+}
 
-    #slider-container #slider .slide {
-      height: 90%;
-    }
-  
-  
-    #slider-container #slider .slide {
-      width: calc(5% - 20px);
-    }
+.cta-btn:hover {
+  background: #e86007;
+}
 
-    .slide img {
-      height: 324px;
-  }
+.cta-btn a {
+    color: white;
+}
 
-  #slider-container #slider .slide .span {
-    top: 230px;
-  }
-  
-  }
-  
   @media only screen and (max-width: 600px) {
     .heading {
       align-items: unset !important;
@@ -201,63 +157,7 @@ input[type=search] {
     .sub-btn {
       height: 50px;
     }
-
-    #slider-container .btn {
-      height: 100%;
-      top: calc(10% - 35px);
-    }
-
-    #slider-container {
-      height: 304.5px;
-    }
-
-    #slider-container #slider .slide {
-      height: 100%;
-    }
-
-    #slider-container #slider {
-      height: 45%;
-    }
-  
-    #slider-container #slider .slide {
-      width: calc(10% - 20px);
-    }
-
-    #slider-container #slider {
-      width: 1200%;
-    }
-
-    .slide img {
-      height: 300px;
   }
-
-  #slider-container #slider .slide .span {
-    top: 206px;
-  }
-  }
-
-  /* 
-  .loader {
-  border: 16px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 16px solid #3498db;
-  width: 120px;
-  height: 120px;
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;
-  margin: 7rem;
-}
-
-@-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-  */
 
 .btn i {
     font-size: 35px;
