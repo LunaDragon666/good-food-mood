@@ -45,7 +45,7 @@
         </header>
         <!-- SEARCHBAR -->
         <div id='container'>  
-            <input type='search' placeholder='Search'>
+            <input id='search-input' type='search' placeholder='Search ...'>
             <button class='button'><i class="fa fa-search"></i></button>
         </div>
         <!-- HEADER -->
@@ -63,164 +63,21 @@
                 <!-- Filter button(s)/input(s) -->
                 <div class="select">
                     <select name="categories" id="categories" class="categories">
-                        <option value="0">All meal</option>
-                        <option value="1">Breakfast</option>
-                        <option value="2">Dessert</option>
-                        <option value="3">Dinner</option>
-                        <option value="4">Lunch</option>
-                        <option value="5">Side-dish</option>
-                        <option value="6">Snack</option>
-                        <option value="7">Supper</option>
+                        <option class="category" name="category" value="25">All meal</option>
+                        <option id="breakfast" class="category" name="category" value="18">Breakfast</option>
+                        <option id="dessert" class="category" name="category" value="19">Dessert</option>
+                        <option id="dinner" class="category" name="category" value="20">Dinner</option>
+                        <option id="lunch" class="category" name="category" value="21">Lunch</option>
+                        <option id="side-dish" class="category" name="category" value="22">Side-dish</option>
+                        <option id="snack" class="category" name="category" value="23">Snack</option>
+                        <option id="supper" class="category" name="category" value="24">Supper</option>
                     </select>
                   </div>
             </article>
-                <!-- Content slider -->
-                <div id="slider-container">
-                  <span onclick="slideRight()" class="btn">
-                    <i class="fa fa-angle-left"></i>
-                  </span>
-                  <!-- API Call -->
-                    <div id="slider" class="slider">
-                    <!-- <div class="loader"></div> -->
-                    <div class="slide">
-                        <a href="pages/detail.html">
-                            <img src="img/logo/avocado-toast.jpg" alt="avocado toast" />
-                            <div class="span">
-                                <h3>Avocado toast</h3>
-                                <div class="info">
-                                    <span>Breakfast</span>
-                                    <p><i class="fa fa-clock"></i> 10 min</p> 
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="slide">
-                        <a href="pages/detail.html">
-                            <img src="img/logo/carrot-fries.jpg" alt="carrot fries" />
-                            <div class="span">
-                                <h3>Carrot fries</h3>
-                                <div class="info">
-                                    <span>Snack</span>
-                                    <p><i class="fa fa-clock"></i> 30 min</p> 
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="slide">
-                        <a href="pages/detail.html">
-                            <img src="img/logo/caniflower-rice.jpg" alt="caniflower rice" />
-                            <div class="span">
-                                <h3>Cauliflower rice</h3>
-                                <div class="info">
-                                    <span>Side-dish</span>
-                                    <p><i class="fa fa-clock"></i> 25 min</p> 
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="slide">
-                        <a href="pages/detail.html">
-                            <img src="img/logo/eggwraps.jpg" alt="eggwraps" />
-                            <div class="span">
-                                <h3>Eggwraps</h3>
-                                <div class="info">
-                                    <span>Lunch</span>
-                                    <p><i class="fa fa-clock"></i> 15 min</p> 
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="slide">
-                        <a href="pages/detail.html">
-                            <img src="img/logo/omelette.jpg" alt="omelette" />
-                            <div class="span">
-                                <h3>Omelette</h3>
-                                <div class="info">
-                                    <span>Breakfast</span>
-                                    <p><i class="fa fa-clock"></i> 20 min</p> 
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="slide">
-                        <a href="pages/detail.html">
-                            <img src="img/logo/protein-shake.jpg" alt="protein shake" />
-                            <div class="span">
-                                <h3>Protein milkshake</h3>
-                                <div class="info">
-                                    <span>Dessert</span>
-                                    <p><i class="fa fa-clock"></i> 25 min</p> 
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="slide">
-                        <img src="img/logo/saladmix.jpg" alt="simple salad mix" />
-                        <div class="span">
-                            <h3>Saladmix in 1-2-3</h3>
-                            <div class="info">
-                                <span>Lunch</span>
-                                <p><i class="fa fa-clock"></i> 15 min</p> 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <img src="img/logo/smoothie.jpg" alt="smoothie" />
-                        <div class="span">
-                            <h3>Smoothie</h3>
-                            <div class="info">
-                                <span>Snack</span>
-                                <p><i class="fa fa-clock"></i> 5 min</p> 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <img src="img/logo/sweetpotato-taco.jpg" alt="smoothie" />
-                        <div class="span">
-                            <h3>Sweet-potato taco</h3>
-                            <div class="info">
-                                <span>Dinner</span>
-                                <p><i class="fa fa-clock"></i> 30 min</p> 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <img src="img/logo/tunasteak.jpg" alt="tunasteak" />
-                        <div class="span">
-                            <h3>Tunasteak</h3>
-                            <div class="info">
-                                <span>Dinner</span>
-                                <p><i class="fa fa-clock"></i> 15 min</p> 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <a href="pages/detail.html">
-                            <img src="img/logo/turkey-patties.jpg" alt="turkey patties" />
-                            <div class="span">
-                                <h3>Turkey patties</h3>
-                                <div class="info">
-                                    <span>Dinner</span>
-                                    <p><i class="fa fa-clock"></i> 25 min</p> 
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="slide">
-                        <img src="img/logo/veggie-dip.jpg" alt="veggie dip" />
-                        <div class="span">
-                            <h3>Veggie dip</h3>
-                            <div class="info">
-                                <span>Side-dish</span>
-                                <p><i class="fa fa-clock"></i> 5 min</p> 
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-                  <span onclick="slideLeft()" class="btn">
-                    <i class="fa fa-angle-right"></i>
-                  </span>
-                </div>
+            <div class="loading">
+                <div class="loader"></div>
+            </div>
+            <section class="recipes"></section>
         </section>
         <section class="subscribe-field">
             <h2>Can't get enough of our recipe list?</h2>
@@ -254,7 +111,8 @@
             </article>
         </footer>
         <!-- JavaScript File(s) -->
-        <script src="../js/index.js"></script>
+        <script src="js/index.js"></script>
+        <script src="js/components/message.js"></script>
     </body>
 </html>
 
