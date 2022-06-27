@@ -8,7 +8,7 @@ food.forEach(function(recipe) {
     recipeList.innerHTML += `
                             <article class="recipe">
                             <!-- <a href="detail.html?id=${recipe.id}"> -->
-                            <a href="pages/detail.html">
+                            <a href="detail.html?id=${recipe.id}">
                                 <div class="img-hover-zoom">
                                     <img src="${recipe.images[0].src}" alt="${recipe.name}">
                                 </div>
@@ -19,7 +19,7 @@ food.forEach(function(recipe) {
                                         <p><i class="fas fa-fire"></i> ${recipe.prices.regular_price} kcal</p>
                                     </div>
                                 <div class="cta-btn">
-                                    <a href="pages/detail.html">Get the recipe</a>
+                                  <a href="detail.html?id=${recipe.id}">Get the recipe</a>
                                 </div>
                                 </div>
                                 </a>
