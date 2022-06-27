@@ -35,7 +35,7 @@ fetchRecipe();
 function createRecipe(recipe) {
     recipeContainer.innerHTML = `
 			        <div class="card">
-            <img id="myImg" src="${recipe.images[0].src}" alt="${recipe.name}" />
+            <img src="${recipe.images[0].src}" alt="${recipe.name}" />
       <article class="card-content">
                       <h2>${recipe.name}</h2>
                   <span class="food-info">
@@ -61,39 +61,7 @@ function createRecipe(recipe) {
       </article>
     </div>
           <article class="recipe-content">
-              <div>
-              <h3>Ingredients</h3>
-              <ul class="recipe-list">
-                  <li class="recipe-item">
-                      1 whole egg
-                  </li>
-                  <li class="recipe-item">
-                      2 egg white
-                  </li>
-                  <li class="recipe-item">
-                      salt & pepper
-                  </li>
-                  <li class="recipe-item">
-                      chives or other herbs
-                  </li>
-              </ul>
-              </div>
-              <div>
-              <h3>Instructions</h3>
-              <ol class="recipe-instrucs">
-                  <li class="step">
-                      <span>Whisk or mash together eggs, salt and pepper with a hand mixer.</span>
-                  </li>
-                  <li class="step">
-                      <span>Melt a little butter or oil in a frying pan and pour over the egg mixture, 
-                      sprinkle finely chopped chives or herps as desired on one side before the egg 
-                      yolk hardens. Turn and fry a little on the other side.</span> 
-                  </li>
-                  <li class="step">
-                      <span>Fill with whatever you want. As good lukewarm as cooled.</span>
-                  </li>
-              </ol>
-          </div>
+            ${recipe.description}
           </article>
           </section>
     `;
