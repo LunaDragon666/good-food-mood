@@ -49,6 +49,7 @@
 }
 
   .tag, .warning {
+    height: 40px;
     padding: .5rem 1rem;
     position: relative;
     top: 10px;
@@ -121,7 +122,7 @@
 
 .recipe-content div:nth-child(2) {
   background: #FBF8F3;
-  padding: 1rem 3rem 2rem 1.5rem;
+  padding: 1rem 3rem 2rem;
 }
 
 .recipe-content div:nth-child(2) h3 {
@@ -182,6 +183,11 @@
   text-transform: uppercase;
 }
 
+.tags span:first-child {
+  display: flex;
+  gap: 10px;
+}
+
   @media (max-width: 1069px) {
     .recipe-content {
       flex-direction: column;
@@ -221,6 +227,3 @@
       font-size: 15px;
   }
   }
-
-  /* MODAL */
-  
