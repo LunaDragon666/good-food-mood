@@ -35,11 +35,7 @@ fetchRecipe();
 function createRecipe(recipe) {
     recipeContainer.innerHTML = `
 		<article class="card">
-
-            <img id="myImg" src="${recipe.images[0].src}" alt="${recipe.name}" />
-            <div id="myModal" class="modal">
-                <img class="modal-content" id="img">
-            </div>
+            <img id="modalImg" src="${recipe.images[0].src}" alt="${recipe.name}" />
 
             <div class="card-content">
             <h2>${recipe.name}</h2>
@@ -49,19 +45,7 @@ function createRecipe(recipe) {
            <i class="fas fa-fire"></i> ${recipe.prices.regular_price} kcal | 
            <i class="fas fa-utensils"></i> ${recipe.id} serving
            </span>
-
             ${recipe.short_description}
-            <div class="tags">
-            <span class="tag-column">
-            <div class="tag">${recipe.tags[0].name}</div>
-            </span>
-            <span class="tag-column">
-            <div class="warning">
-            <i class="fa fa-exclamation-triangle"></i> Egg
-            </div>
-            </span>
-            </div>
-
             </div>
           </article>
 
