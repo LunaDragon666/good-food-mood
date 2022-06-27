@@ -121,7 +121,7 @@
 
 .recipe-content div:nth-child(2) {
   background: #FBF8F3;
-  padding: 1rem 3rem 2rem;
+  padding: 1rem 3rem 2rem 1.5rem;
 }
 
 .recipe-content div:nth-child(2) h3 {
