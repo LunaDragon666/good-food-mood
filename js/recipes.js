@@ -34,36 +34,41 @@ fetchRecipe();
 
 function createRecipe(recipe) {
     recipeContainer.innerHTML = `
-		  <article class="card">
-      <img src="${recipe.images[0].src}" alt="${recipe.name}" />
-      <div class="card-content">
-        <h2>${recipe.name}</h2>
+		<article class="card">
 
-      <span class="food-info">
-        <i class="fa fa-clock"></i> ${recipe.prices.price} min. | 
-        <i class="fas fa-fire"></i> ${recipe.prices.regular_price} kcal | 
-        <i class="fas fa-utensils"></i> ${recipe.id} serving
-      </span>
+            <img id="myImg" src="${recipe.images[0].src}" alt="${recipe.name}" />
+            <div id="myModal" class="modal">
+                <img class="modal-content" id="img">
+            </div>
 
-      ${recipe.short_description}
-      <div class="tags">
-      <span class="tag-column">
-      <div class="tag">${recipe.tags[0].name}</div>
-      </span>
-      <span class="tag-column">
-      <div class="warning">
-      <i class="fa fa-exclamation-triangle"></i> Egg
-      </div>
-      </span>
-      </div>
+            <div class="card-content">
+            <h2>${recipe.name}</h2>
 
-      </div>
-      </article>
+           <span class="food-info">
+           <i class="fa fa-clock"></i> ${recipe.prices.price} min. | 
+           <i class="fas fa-fire"></i> ${recipe.prices.regular_price} kcal | 
+           <i class="fas fa-utensils"></i> ${recipe.id} serving
+           </span>
 
-      <article class="recipe-content">
-        ${recipe.description}
-      </article>
-  `;
+            ${recipe.short_description}
+            <div class="tags">
+            <span class="tag-column">
+            <div class="tag">${recipe.tags[0].name}</div>
+            </span>
+            <span class="tag-column">
+            <div class="warning">
+            <i class="fa fa-exclamation-triangle"></i> Egg
+            </div>
+            </span>
+            </div>
+
+            </div>
+          </article>
+
+        <article class="recipe-content">
+            ${recipe.description}
+        </article>
+    `;
 }
 
 /* 
