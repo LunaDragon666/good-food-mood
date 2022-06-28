@@ -22,11 +22,18 @@ footer #links {
     gap: 25px;
 }
 
-.top-btn {
-    background: #e86007;
-    color: #352711;
-    border-radius: 10px;
-    padding: .75rem;
+#links i {
+    transition: .5s;
+}
+
+.top-btn i {
+    color: white;
+    font-size: 36px;
+    transition: .5s;
+}
+
+.top-btn i:hover, #links i:hover {
+    color: #ee911f; 
 }
 
 .wrapper {
@@ -39,7 +46,10 @@ footer #links {
         gap: 50px;
         text-align: center;
     }
-    .footer:first-child {
+    #copyright {
+        order: 3;
+    }
+    #links {
         order: 2;
     }
 }
