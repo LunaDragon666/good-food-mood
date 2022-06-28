@@ -168,12 +168,16 @@
 }
 
 .tag {
-  background: aliceblue;
+  background: #ee911f;
+  color: white;
+  font-size: 14px;
   padding: .5rem 2rem;
+  text-transform: uppercase;
 }
 
 #warning {
-  background: white;
+  background: #ffbbc8;
+  color: red;
   display: flex;
   flex-wrap: wrap;
 }
@@ -208,3 +212,4 @@
       font-size: 15px;
   }
   }
+  
