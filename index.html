@@ -61,18 +61,15 @@
             <article class="heading">
                 <h2>Our featured recipes</h2>
                 <!-- Filter button(s)/input(s) -->
-                <div class="select">
-                    <select name="categories" id="categories" class="categories">
-                        <option class="category" name="category" value="25">All meal</option>
-                        <option id="breakfast" class="category" name="category" value="18">Breakfast</option>
-                        <option id="dessert" class="category" name="category" value="19">Dessert</option>
-                        <option id="dinner" class="category" name="category" value="20">Dinner</option>
-                        <option id="lunch" class="category" name="category" value="21">Lunch</option>
-                        <option id="side-dish" class="category" name="category" value="22">Side-dish</option>
-                        <option id="snack" class="category" name="category" value="23">Snack</option>
-                        <option id="supper" class="category" name="category" value="24">Supper</option>
-                    </select>
-                  </div>
+                <div id="categories" class="categories">
+                    <button class="category" name="category" value="25">All meals</button>
+                    <button id="breakfast" class="category" name="category" value="18">Breakfast</button>
+                    <button id="dessert" class="category" name="category" value="19">Dessert</button>
+                    <button id="lunch" class="category" name="category" value="21">Lunch</button>
+                    <button id="side-dish" class="category" name="category" value="22">Side-dish</button>
+                    <button id="snack" class="category" name="category" value="23">Snack</button>
+                    <button id="supper" class="category" name="category" value="24">Supper</button>
+                </div>
             </article>
             <div class="loading">
                 <div class="loader"></div>
@@ -90,7 +87,7 @@
             <form class="sub-form" id="subform">
                 <label>
                 <input name="email" id="email" placeholder="Email">
-                    <div class="sub-error" id="emailError">Invalid email adress</div>
+                    <div class="sub-error" id="emailError">&#9888; Invalid email adress.</div>
                 </label>
                     <button class="sub-btn" id="submit">Subscribe</button>
                 </span>
