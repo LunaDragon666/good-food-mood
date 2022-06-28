@@ -86,10 +86,14 @@
                 <b>Subscribe</b> 
                 to get our latest easy-peasy recipes directly to your inbox, for free!
             </p>
-            <form class="sub-form">
-                <input type="text" id="name" name="name" placeholder="Name">
-                <input type="email" id="email" name="email" placeholder="E-mail">
-                <button class="sub-btn">Subscribe</button>
+            <div id="subscribed"></div>
+            <form class="sub-form" id="subform">
+                <label>
+                <input name="email" id="email" placeholder="Email">
+                    <div class="sub-error" id="emailError">Invalid email adress</div>
+                </label>
+                    <button class="sub-btn" id="submit">Subscribe</button>
+                </span>
             </form>
         </section>
     </div>
@@ -113,6 +117,6 @@
         <!-- JavaScript File(s) -->
         <script src="js/index.js"></script>
         <script src="js/components/message.js"></script>
+        <script src="js/components/subscription.js"></script>
     </body>
 </html>
-
