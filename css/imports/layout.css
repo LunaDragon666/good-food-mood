@@ -156,6 +156,9 @@ margin-top: 1rem;
 #subscribed {
   width: 100%;
 }
+.categories {
+  flex-direction: column;
+}
   }
 
 .btn i {
