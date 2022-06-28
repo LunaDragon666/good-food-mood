@@ -156,9 +156,7 @@ margin-top: 1rem;
 #subscribed {
   width: 100%;
 }
-.categories button {
-    padding: .75rem 2.75rem !important;
-}
+.categories button {width: 100%;}
   }
 
 .btn i {
