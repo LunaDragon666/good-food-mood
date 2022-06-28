@@ -28,7 +28,6 @@ function submitForm(event) {
     } 
    subscribeForm.reset();
 }
-
 subscribeForm.addEventListener("submit", submitForm);
 function validateEmail(email) {
     const reg = /\S+@\S+\.\S+/;
