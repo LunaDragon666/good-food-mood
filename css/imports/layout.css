@@ -146,13 +146,16 @@ input[type=search] {
     gap: 10px;
     margin-top: 2.5rem;
 }
-    .sub-form, .sub-btn {
-            width: 100% !important;
-    }
-
-    .sub-btn {
-      height: 50px;
-    }
+.sub-form, input, .sub-btn {
+  width: 100% !important;
+}
+.sub-btn {
+height: 50px;
+margin-top: 1rem;
+}
+#subscribed {
+  width: 100%;
+}
   }
 
 .btn i {
@@ -234,8 +237,8 @@ select#categories {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 2.5rem 1.75rem 5rem;
-    text-align: center;
+  padding: 2.5rem 1.75rem 5.25rem;
+  text-align: center;
 }
 
 .subscribe-field h2 {
@@ -261,13 +264,15 @@ b {
     border: none;
     font-family: inherit;
     padding: 1rem;
+    width: 250px;
 }
 
 .sub-btn {
-    background: #ee911f;
-    font-size: 14px;
-    letter-spacing: 1px;
-    padding: .5rem .75rem;
-    text-transform: uppercase;
-    width: 120px;
+  background: #ee911f;
+  font-size: 14px;
+  letter-spacing: 1px;
+  height: 48px;
+  padding: .5rem .75rem;
+  text-transform: uppercase;
+  width: 120px;
 }
