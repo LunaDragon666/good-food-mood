@@ -156,8 +156,8 @@ margin-top: 1rem;
 #subscribed {
   width: 100%;
 }
-.categories {
-  flex-direction: column;
+.categories button {
+    padding: .5rem !important;
 }
   }
 
@@ -196,7 +196,7 @@ margin-top: 1rem;
   cursor: pointer;
   font-family: inherit;
   font-size: 16px;
-  padding: .5rem 1rem;
+  padding: .5rem 1.005rem;
   transition: .5s;
 }
 
