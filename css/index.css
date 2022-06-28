@@ -1,3 +1,10 @@
+.error-message {
+    background: #ffb8b8;
+    border: 1px solid #ff4949;
+    color: #ef0000;
+    padding: 1rem;
+}
+
 .sub-error {
     display: none;
     background: #ffb8b8;
