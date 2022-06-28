@@ -37,7 +37,6 @@ async function getRecipes(url) {
 
 } catch(error) {
     recipeList.innerHTML = theError("Failed to upload recipes!");
-
   } 
 }
 getRecipes(api);
@@ -57,20 +56,17 @@ searchButton.onclick = function() {
   const categories = document.querySelectorAll(".categories");
 
   categories.forEach(function(category){
-
     category.onclick = function(event){
-        document.querySelector(".loading").innerHTML = '<div class="loader"></div>';
+      document.querySelector(".loading").innerHTML = '<div class="loader"></div>';
       let newUrl;
       if (event.target.id === "featured") {
         newUrl = api + "?featured=true";
       }
       else {
         const categoryChosen = event.target.value;
-        newUrl = api + `?category=${categoryChosen}` 
-      }
+        newUrl = api + `?category=${categoryChosen}`
+      } 
       recipeList.innerHTML = ""; 
       getRecipes(newUrl);
     }
   });
-
-  // subscribe field
