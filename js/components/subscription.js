@@ -21,7 +21,7 @@ function submitForm(event) {
     if(!messageError) {
         subscribeForm.style.display = "none";
         confirmation.innerHTML = `<div class="confirmation">
-                                    <p>Thank you!</p><p>You are now subscribed to our newsletter.</p>
+                                    <p>Thank you!</p><p>You are now subscribed to our newsletters.</p>
                                   </div>
                                   <div class="arrow-down"></div>
                                   `;
