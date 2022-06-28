@@ -84,6 +84,7 @@ input[type=search] {
 /* [1] The container */
 .img-hover-zoom {
   overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+  height: 300px;
 }
 
 /* [2] Transition property for smooth transformation of images */
