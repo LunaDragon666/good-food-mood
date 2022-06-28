@@ -23,7 +23,7 @@ input[type=search] {
     height: 60px;
   }
   
-  button {
+  .button {
     border: none;
     cursor: pointer;
     margin: 0;
@@ -175,60 +175,18 @@ margin-top: 1rem;
 .heading {
   display: flex;
   flex-direction: row;
-  align-items: start;
+  align-items: baseline;
   justify-content: space-between;
 }
 
 .categories {
-  appearance: none;
-  outline: 0;
-  border: 0;
-  box-shadow: none;
-  flex: 1;
-  padding: 0 1em;
-  color: #352711;
-  background-color: #ffe397;
-  background-image: none;
-  cursor: pointer;
-  font-family: inherit;
-  font-size: 16px;
-}
-/* Remove IE arrow */
-.categories::-ms-expand {
-  display: none;
-}
-.select {
-  position: relative;
   display: flex;
-  width: 10em;
-  height: 2.5em;
-  overflow: hidden;
-}
-/* Arrow */
-.select::after {
-  content: '\25BC';
-  position: absolute;
-  top: -5px;
-  right: 0;
-  padding: 1em;
-  background-color: #ee911f;
-  pointer-events: none;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
-option:checked {
-    background-color: #e86007 !important;
-    color: white !important;
-}
-
-select option {
-  background: #ffbf48;
-  box-shadow: inset 20px 20px #ffbf48;
-} 
-
-select#categories {
-  max-width: 100%;
-  min-width: 100%;
-  width: 100% fit-content !important;
+.categories button {
+  cursor: pointer;
 }
 
 .subscribe-field {
@@ -269,7 +227,10 @@ b {
 
 .sub-btn {
   background: #ee911f;
+  border: none;
+  color: white;
   font-size: 14px;
+  font-weight: bold;
   letter-spacing: 1px;
   height: 48px;
   padding: .5rem .75rem;
