@@ -12,6 +12,7 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: row;
+    height: 375px;
     max-width: 1280px;
     margin: 0 auto;
   }
@@ -41,36 +42,6 @@
       flex-direction: column;
       justify-content: space-between;
   }
-
-  .tags {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-  .tag, .warning {
-    height: 40px;
-    padding: .5rem 1rem;
-    position: relative;
-    top: 10px;
-}
-
-.tag {
-   background: #ffa700;
-   margin-right: 1rem;
-}
-
-.warning {
-  background: #ffcbc7;
-  color: #e03d31;
-  width: 100%;
-}
-
-.tag-column {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
 
 .food-info {
     display: flex;
@@ -183,9 +154,27 @@
   text-transform: uppercase;
 }
 
-.tags span:first-child {
+.tags {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.tags div:first-child {
+  display: flex;
+  flex-wrap: wrap;
   gap: 10px;
+}
+
+.tag {
+  background: aliceblue;
+  padding: .5rem 2rem;
+}
+
+#warning {
+  background: white;
+  display: flex;
+  flex-wrap: wrap;
 }
 
   @media (max-width: 1069px) {
@@ -197,6 +186,7 @@
     }
       .card {
           flex-direction: column;
+          height: auto;
       }
       .card-content {
         margin-top: -5px;
@@ -213,17 +203,8 @@
       .recipe-content div:nth-child(2) {
         padding: 1rem 3rem 2rem 1rem;
       }
-      .modal-content {
-        width: 100%;
-      }
-      .tags {
-        flex-direction: column;
-        gap: 25px;
-    }
-    .tag {
-      margin-right: 0;
-    }
     .food-info {
       font-size: 15px;
   }
   }
+  
