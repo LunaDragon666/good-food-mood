@@ -36,7 +36,7 @@ async function getRecipes(url) {
   displayRecipes(recipes);
 
 } catch(error) {
-    recipeList.innerHTML = theError("Oh no!");
+    recipeList.innerHTML = theError("Failed to upload recipes!");
 
   } 
 }
