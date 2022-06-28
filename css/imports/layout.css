@@ -174,19 +174,36 @@ margin-top: 1rem;
 
 .heading {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   align-items: baseline;
   justify-content: space-between;
 }
 
 .categories {
+  color: inherit;
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  margin-bottom: 2rem;
 }
 
 .categories button {
+  background: #F2C36B;
+  border: none;
   cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  padding: .5rem 1rem;
+  transition: .5s;
+}
+
+.categories button:hover {
+  background: #ee911f;
+}
+
+.categories button:focus {
+  background: #e86007;
+  color: white;
 }
 
 .subscribe-field {
@@ -229,6 +246,7 @@ b {
   background: #ee911f;
   border: none;
   color: white;
+  font-family: inherit;
   font-size: 14px;
   font-weight: bold;
   letter-spacing: 1px;
