@@ -43,9 +43,20 @@ function createRecipe(recipe) {
            <span class="food-info">
            <i class="fa fa-clock"></i> ${recipe.prices.price} min. | 
            <i class="fas fa-fire"></i> ${recipe.prices.regular_price} kcal | 
-           <i class="fas fa-utensils"></i> ${recipe.id} serving
+           <i class="fas fa-utensils"></i> 1 serving
            </span>
             ${recipe.short_description}
+            <span class="tags">
+            <div>
+            <span class="tag">${recipe.tags[0].name}</span>
+            <span class="tag">${recipe.tags[1].name}</span>
+            <span class="tag">${recipe.tags[2].name}</span>
+            </div>
+            <div>
+            <span class="tag" id="warning">
+            &#9888; ${recipe.attributes[0].terms[0].name}</span>
+            </div>
+            </span>
             </div>
           </article>
 
