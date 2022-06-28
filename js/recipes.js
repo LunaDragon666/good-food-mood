@@ -1,4 +1,4 @@
-const recipeTitle = document.querySelector("title").innerHTML = "Good Food Mood | Recipe";
+const recipeTitle = document.querySelector("title");
 
 const recipeContainer = document.querySelector(".recipe-container");
 const url = new URL(window.location.href);
@@ -32,6 +32,7 @@ async function fetchRecipe() {
 fetchRecipe();
 
 function createRecipe(recipe) {
+    recipeTitle.innerHTML = `Good Food Mood | ${recipe.name}`; 
     recipeContainer.innerHTML = `
 		<article class="card">
             <img id="modalImg" src="${recipe.images[0].src}" alt="${recipe.name}" />
