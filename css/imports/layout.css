@@ -32,9 +32,14 @@ input[type=search] {
     background-color: #f58712;
     font-size: 24px;
     font-weight: bold;
+    transition: .5s;
     width: 70px;
     white-space: nowrap;
   }
+
+.button:hover {
+  background: #e86007;
+}
 
   .loader {
     animation: spin 2s linear infinite;
