@@ -58,6 +58,7 @@
 
 .nav-item.active {
     font-weight: bold;
+    text-decoration: none !important;
 }
 
 /* Hamburger menu */
@@ -168,5 +169,9 @@
         font-size: 18px;
         margin: 0 5px;
         width: auto;
+    }
+    .nav-item:hover {
+        text-decoration: underline;
+        text-underline-offset: 5px;
     }
 }
