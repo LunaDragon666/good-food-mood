@@ -34,6 +34,9 @@ fetchRecipe();
 function createRecipe(recipe) {
     recipeTitle.innerHTML = `Good Food Mood | ${recipe.name}`; 
     recipeContainer.innerHTML = `
+    <div class="link-wrap">
+        <a class="home" href="../index.html">Home</a> <span> / ${recipe.name} </span>
+    </div>
 		<article class="card">
             <img id="modalImg" src="${recipe.images[0].src}" alt="${recipe.name}" />
 
