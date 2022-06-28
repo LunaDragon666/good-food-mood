@@ -56,32 +56,13 @@ h3 {
     margin-bottom: -1rem;
 }
 .food-tag {
-    padding: .5rem 1rem;
-}
-
-#diary-free {
-    background: #b5ddff;
-}
-
-#gluten-free {
     background: #ffd88e;
-}
-
-#low-carb {
-    background: #ffc5c5;
-}
-
-#vegan {
-    background: #618C03;
-    color: white;
-}
-
-#vegetarian {
-    background: #c2c55d;
+    padding: .5rem 1rem;
 }
 
 .icon-set {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     gap: 1.4rem;
     margin-top: 2rem;
@@ -158,4 +139,3 @@ h3 {
         margin-top: 0;
     }
 }
-
