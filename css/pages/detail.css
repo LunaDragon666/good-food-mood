@@ -179,6 +179,12 @@
   margin-bottom: 10px;
 }
   }
-  .loading {
-    margin: 15rem 0;
+
+  .link-wrap {
+    margin: 0 auto 1rem;
+    max-width: 1280px;
+}
+
+.link-wrap a:hover {
+  text-decoration: underline;
 }
