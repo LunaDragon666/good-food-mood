@@ -1,80 +1,60 @@
-/* 
-const form = document.querySelector("#contactForm");
-const message = document.querySelector("#message");
+const contactForm = document.querySelector("#contactForm");
+const formMessage = document.querySelector("#formMessage");
 
-// Name
-const fullName = document.querySelector("#fullName");
-const fullNameError = document.querySelector("#fullNameError");
-// Subject
-const subject = document.querySelector("#subjectName");
-const subjectError = document.querySelector("#subjectNameError");
-// Email
-const email = document.querySelector("#email");
-const emailError = document.querySelector("#emailError");
-// Adress
-const adress = document.querySelector("#adress");
-const adressError = document.querySelector("#adressError");
+const fName = document.querySelector("#fName");
+const fNameError = document.querySelector("#fNameError");
+const subject = document.querySelector("#sub");
+const subjectError = document.querySelector("#subError");
+const mail = document.querySelector("#mail");
+const mailError = document.querySelector("#mailError");
+const message = document.querySelector("#msg");
+const messageError = document.querySelector("#msgError");
 
-
-// If all inputs pass or fail while submitting the contact form
 function checkIfFormIsPassingBy() {
    let error = false;
 
-   // Name
-   if (checkLength(fullName.value, "") === true) {
-      fullNameError.style.display = "none";
+   if (letterLength(fName.value, "") === true) {
+      fNameError.style.display = "none";
    } else {
-      fullNameError.style.display = "block";
+      fNameError.style.display = "block";
       error = true;
    }
 
-   // Subject
-   if (checkLength(subjectName.value, 9) === true) {
+   if (letterLength(subject.value, 10) === true) {
       subjectError.style.display = "none";
    } else {
       subjectError.style.display = "block";
       error = true;
    }
 
-   // Email
-   if (validateEmail(email.value) === true) {
-      emailError.style.display = "none";
+   if (mailValidation(mail.value) === true) {
+      mailError.style.display = "none";
    } else {
-      emailError.style.display = "block";
+      mailError.style.display = "block";
       error = true;
    }
 
-   // Adress
-   if (checkLength(adress.value, 24) === true) {
-      adressError.style.display = "none";
+   if (letterLength(message.value, 15) === true) {
+      messageError.style.display = "none";
    } else {
-      adressError.style.display = "block";
+      messageError.style.display = "block";
       error = true;
    }
-
    return error;
-
    } 
 
-
-   // When contact form is submitted after required input fields are filled in 
    function submitForm(event) {
       event.preventDefault();
-
       const theErrors = checkIfFormIsPassingBy();
 
       if(!theErrors) {
-         message.innerHTML = '<div class="message">Whoop whoop&#127881; Your request is on its way! We will come right back to you asap </div>';
+         formMessage.innerHTML = '<div class="form-confirmation">Message sent!</div>';
       } 
-
-   // Retain inputted text after submit, unless we change it or refresh the page
-   form.focus();
+   contactForm.focus();
    }
 
-
-   form.addEventListener("submit", submitForm);
-
-   function checkLength(value, len) {
+   contactForm.addEventListener("submit", submitForm);
+   function letterLength(value, len) {
       if (value.trim().length > len) {
          return true;
       } else {
@@ -82,10 +62,9 @@ function checkIfFormIsPassingBy() {
       }
    }
 
-   // Email validation controller inside the contact form (email-input)
-   function validateEmail(email) {
+   function mailValidation(email) {
       const reg = /\S+@\S+\.\S+/;
       const patternMatches = reg.test(email);
       return patternMatches;
    }
-*/
+   
