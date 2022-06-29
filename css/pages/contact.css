@@ -73,7 +73,7 @@ textarea {
 .msg-btn {
   background: #ee911f;
   border: none;
-  color: white;
+  color: inherit;
   cursor: pointer;
   letter-spacing: 2px;
   margin: 1.5rem 0 0 0;
@@ -84,6 +84,7 @@ textarea {
 }
 .msg-btn:hover {
   background: #e86007;
+  color: white;
 }
 
 @media (min-width: 1024px) {
