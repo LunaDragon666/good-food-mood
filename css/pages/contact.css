@@ -3,82 +3,105 @@
 @import "../imports/layout.css";
 @import "../imports/footer.css";
 
-form {
-  margin-bottom: 2.5rem;
-}
-
-.form-control {
-  width: 100%;
-  margin-bottom: 2rem;
-  padding: 1.2rem;
-  border-radius: 5px;
-  font-size: 1rem;
-  border: 1px solid #dbdbdb;
-  letter-spacing: 1px;
-}
-
-.form-control::placeholder {
-  color: rgb(92, 92, 92);
-  font-weight: bold;
-}
-
-.message {
-  resize: vertical;
-  font-family: inherit;
-  font-size: inherit;
-  min-height: 15rem;
-}
-
-.btn {
-  border: none;
-  color: #fff;
-  font-size: 1rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-align: center;
-  display: block;
-  margin: 0 auto;
-  cursor: pointer;
-  transition: .5s;
-}
-
-.btn:hover {
-  background-color: #fec810;
-}
-
-.btn:active {
-  box-shadow: 0px 0px 0px 4px rgba(254, 209, 54, 0.6);
-}
-
 .textbox {
   background: #ffe5b4;
-  margin: 1rem 0 3rem;
+  margin: 1rem 0 2rem;
   padding: 1rem 1rem 3rem;
   max-width: 920px;
   line-height: 25px;
 }
 
-@media (min-width: 991px) {
-  form {
-    display: grid;
-    grid-gap: 2.4rem;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(4, 1fr);
-  }
+/* Form validations */
+.contact-error {
+  display: none;
+  color: #e6003d;
+  border: 1px solid #e6003d;
+  background: rgb(251 128 128 / 10%);
+  margin: -11px 0 10px 0;
+  padding: 5px;
+}
 
-  .form-control {
-    width: auto;
-    margin: 0;
-  }
+#formMessage {
+  margin-top: -1.4rem;
+}
 
-  .message {
-    grid-column: 2;
-    grid-row: 1 / span 3;
-  }
+.form-confirmation {
+  background: rgb(132, 190, 45, 0.75);
+  border: 1px solid #629f08;
+  color: #001e1b;
+  margin-top: 3rem;
+  padding: 1rem;
+}
 
-  .btn {
-    justify-self: center;
-    grid-column: span 2;
-    width: 150px !important;
+/* */
+form {
+  text-align: center;
+}
+
+input,
+select,
+textarea {
+  border: 1px solid #c4c4c4;
+  font-family: inherit;
+  margin: 10px 0 10px 0;
+  padding: 1rem;
+}
+
+textarea {
+  height: 90%;
+  min-height: 100px;
+}
+
+.contact {
+  max-width: 1000px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.form-wrapper {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+}
+
+.form-wrapper > * {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.msg-btn {
+  background: #ee911f;
+  border: none;
+  color: white;
+  cursor: pointer;
+  letter-spacing: 2px;
+  margin: 1.5rem 0 0 0;
+  padding: 1rem;
+  text-transform: uppercase;
+  transition: .5s;
+  width: 100%;
+}
+.msg-btn:hover {
+  background: #e86007;
+}
+
+@media (min-width: 1024px) {
+  .form-wrapper {
+    flex-direction: row;
   }
+  input,
+  select,
+  textarea {
+  margin: 10px 20px 10px 0px;
+}
+.contact-error {
+  margin: -11px 20px 10px 0;
+}
+.msg-btn {
+  width: 300px;
+}
+.form-confirmation {
+  margin-top: 7.5rem;
+}
 }
