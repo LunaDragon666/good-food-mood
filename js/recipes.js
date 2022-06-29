@@ -38,6 +38,20 @@ function createRecipe(recipe) {
         <a class="home" href="../index.html">Home</a> <span> / ${recipe.name} </span>
     </div>
 		<article class="card">
+        <div class="thumbnail" style="background-image: ${recipe.images[0].src}">
+      
+        <input type="checkbox" id="thumb-trigger1">
+        <label class="tt1" for="thumb-trigger1"></label>
+      
+        <div class="modal-overlay">
+            <div class="modal-wrapper">
+                <label for="thumb-trigger1">&#10006;</label>
+                <img src="${recipe.images[0].src}" alt="${recipe.name}">
+
+            </div>
+        </div>
+    </div>
+
             <img id="modalImg" src="${recipe.images[0].src}" alt="${recipe.name}" />
 
             <div class="card-content">
@@ -68,3 +82,5 @@ function createRecipe(recipe) {
         </article>
     `;
 }
+
+//
