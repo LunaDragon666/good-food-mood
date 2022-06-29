@@ -18,9 +18,13 @@
 
 .confirmation {
     margin-top: 2rem;
-    background: #e86007;
+    background: rgb(132, 190, 45, 1);
     padding: .5rem 1rem 2rem 1rem;
     color: white;
+}
+
+.confirmation p {
+  line-height: .75rem;
 }
 
 .arrow-down {
@@ -28,7 +32,7 @@
   height: 0;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
-  border-top: 20px solid #e86007;
+  border-top: 20px solid rgb(132, 190, 45, 1);
   margin: 0 auto -3.5rem;
 }
 
