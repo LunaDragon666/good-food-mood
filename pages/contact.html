@@ -51,21 +51,24 @@
                 or send us an email at: <b>goodfoodmood@gmail.com</b>.
             </p>
             <!-- Contact form -->
-            <div id="message"></div>
-            <form class="form" id="contactForm">
-                <input class="form-control" type="text" id="name" placeholder="Name *" />
-                <input class="form-control" type="email" id="mail" placeholder="Email *" />
-                <input
-                    class="form-control"
-                    type="subject"
-                    id="sub"
-                    placeholder="Subject *"
-                />
-                <textarea class="message form-control" id="msg" placeholder="Message *" ></textarea>
-                <button type="submit" class="btn  form-control">
-                    Send
-                </button>
+            <form id="contactForm">
+              <div class="form-wrapper">
+                <section>
+                  <input type="text" id="fName" name="name" placeholder="Name *" />
+                  <div class="contact-error" id="fNameError">&#9888; You must enter your name.</div>
+                  <input type="email" id="mail" name="email" placeholder="Email *" />
+                  <div class="contact-error" id="mailError">&#9888; Invalid email adress.</div>
+                  <input type="text" id="sub" name="subject" placeholder="Subject *" />
+                  <div class="contact-error" id="subError">&#9888; The message's subject name must contain min. 10 characters.</div>
+                </section>
+                <section>
+                  <textarea id="msg" name="message" placeholder="Message *"></textarea>
+                  <div class="contact-error" id="msgError">&#9888; The message must contain min. 15 characters.</div>
+                </section>
+              </div>
+              <input type="submit" value="Send Message" class="msg-btn" />
             </form>
+            <div id="formMessage"></div>
         </section>
     </div>
         <!-- FOOTER -->
@@ -85,5 +88,7 @@
                 </a>
             </article>
         </footer>
+        <!-- JavaScript File -->
+        <script src="../js/contact.js"></script>
     </body>
 </html>
