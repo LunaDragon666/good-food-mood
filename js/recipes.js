@@ -38,10 +38,9 @@ function createRecipe(recipe) {
         <a class="home" href="../index.html">Home</a> <span> / ${recipe.name} </span>
     </div>
 		<article class="card">
-        <div class="thumbnail" style="background-image: ${recipe.images[0].src}">
-      
+        <div class="thumbnail">
         <input type="checkbox" id="thumb-trigger1">
-        <label class="tt1" for="thumb-trigger1"></label>
+        <label class="tt1" for="thumb-trigger1"><i class="fas fa-search-plus"></i></label>
       
         <div class="modal-overlay">
             <div class="modal-wrapper">
