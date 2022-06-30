@@ -283,4 +283,5 @@ input:checked ~ .modal-overlay{
     cursor: pointer;
     font-size: 2rem;
     margin: 3rem 0rem;
+    z-index: 1;
 }
