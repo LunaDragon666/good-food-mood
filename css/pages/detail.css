@@ -236,7 +236,7 @@
 }
 
 .modal-overlay {
-  background: #000000;
+  background: rgb(0, 0, 0, 0.85);
   bottom: 0;
   left: 0;
   right: 0;
@@ -259,12 +259,7 @@
   align-items: center;
 }
 
-.modal-wrapper img{
-min-width: 100%;
-width: 100%;
-height: auto;
-margin-top: 100px;
-}
+.modal-wrapper img{min-width: 100%;width: 100%;height: auto;}
 
 input {
   position: absolute;
@@ -275,11 +270,17 @@ input {
   opacity: 0;
   z-index: -100;
   transform: scale(.5);
-  transition: all .75s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 input:checked ~ .modal-overlay{
   opacity: 1;
   z-index: 800;
   transform: scale(1);
+}
+
+    .close-btn {
+    color: white;
+    cursor: pointer;
+    font-size: 2rem;
+    margin: 3rem 0rem;
 }
