@@ -280,7 +280,7 @@ input:checked ~ .modal-overlay{
   transform: scale(1);
 }
 
-    .close-btn {
+    .close-btn i {
     color: white;
     cursor: pointer;
     font-size: 3rem;
