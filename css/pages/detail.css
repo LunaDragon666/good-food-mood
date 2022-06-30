@@ -150,6 +150,9 @@
   #warning {
     margin-top: 10px;
   }
+  .thumbnail {
+    top: 156px !important;
+  }
 }
 
   @media (max-width: 1069px) {
