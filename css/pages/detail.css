@@ -168,7 +168,7 @@
         padding: 1.25rem 1.25rem 2.5rem;
       }
       .card img {
-          width: 100%;
+          width: 100% !important;
       }
       .imgy i {
         bottom: 3px;
@@ -200,7 +200,7 @@
 
 /* */
 .thumbnail {
-  background: rgb(255, 241, 214, 0.25);
+  background: rgb(255 168 0 / 25%);
   display: inline-block;
   position: absolute;
   overflow: hidden;
@@ -225,7 +225,7 @@
 }
 
 .thumbnail i {
-  color: white;
+  color: #352711;
   cursor: pointer;
   font-size: 25px;
   padding: .75rem;
@@ -284,6 +284,5 @@ input:checked ~ .modal-overlay{
     color: white;
     cursor: pointer;
     font-size: 3rem;
-    margin: 2rem 0;
-    z-index: 1;
+    margin: 2rem 0 1rem;
 }
