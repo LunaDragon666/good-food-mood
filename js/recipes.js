@@ -44,7 +44,7 @@ function createRecipe(recipe) {
       
         <div class="modal-overlay">
             <div class="modal-wrapper">
-                <label for="thumb-trigger1" class="close-btn">&#10006;</label>
+                <label for="thumb-trigger1" class="close-btn"><i class="fas fa-times"></i></label>
                 <img src="${recipe.images[0].src}" alt="${recipe.name}">
 
             </div>
