@@ -178,6 +178,9 @@
     .tags div:first-child {
   margin-bottom: 10px;
 }
+    .thumbnail {
+      top: 154px;
+    }
   }
 
   .link-wrap {
@@ -199,7 +202,7 @@
   height: auto;
   width: 50px;
   height: 50px;
-  top: 154px;
+  top: 160px;
   transition: .5s;
 }
 
