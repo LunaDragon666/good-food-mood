@@ -200,7 +200,7 @@
 
 /* */
 .thumbnail {
-  background: rgb(255 255 255 / 25%);
+  background: rgb(255 255 255 / 50%);
   display: inline-block;
   position: absolute;
   overflow: hidden;
