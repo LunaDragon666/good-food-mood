@@ -185,7 +185,7 @@
   margin-bottom: 10px;
 }
     .thumbnail {
-      top: 154px;
+      top: 154px !important;
     }
   }
 
