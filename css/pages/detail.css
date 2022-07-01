@@ -45,6 +45,7 @@
 
 .food-info {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     gap: 10px;
     margin-bottom: 2rem;
@@ -181,9 +182,6 @@
       .recipe-content div:nth-child(2) {
         padding: 1rem 3rem 2rem 1rem;
       }
-    .food-info {
-      font-size: 15px;
-  }
     .tags div:first-child {
   margin-bottom: 10px;
 }
