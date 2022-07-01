@@ -1,5 +1,6 @@
 const contactForm = document.querySelector("#contactForm");
 const formMessage = document.querySelector("#formMessage");
+const textboxInfo = document.querySelector("#textbox");
 
 const fName = document.querySelector("#fName");
 const fNameError = document.querySelector("#fNameError");
@@ -48,9 +49,11 @@ function checkIfFormIsPassingBy() {
       const theErrors = checkIfFormIsPassingBy();
 
       if(!theErrors) {
+         contactForm.style.display = "none";
+         textboxInfo.style.display = "none";
          formMessage.innerHTML = '<div class="form-confirmation">Message sent!</div>';
       } 
-   contactForm.focus();
+   contactForm.reset();
    }
 
    contactForm.addEventListener("submit", submitForm);
