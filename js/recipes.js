@@ -64,7 +64,7 @@ function createRecipe(recipe) {
            | <i class="fas fa-fire"></i> ${recipe.prices.regular_price} kcal | 
            </div>
            <div>
-           <i class="fas fa-utensils"></i> 1 serving
+           <i class="fas fa-utensils"></i> ${recipe.attributes[1].terms[0].name} serving
            </div>
            </span>
             ${recipe.short_description}
