@@ -296,3 +296,10 @@ input:checked ~ .modal-overlay{
     font-size: 3rem;
     margin: 2rem 0 1rem;
 }
+
+.error-message {
+  background: #ffb8b8;
+  border: 1px solid #ff4949;
+  color: #ef0000;
+  padding: 1rem;
+}
