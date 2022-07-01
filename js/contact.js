@@ -53,7 +53,7 @@ function checkIfFormIsPassingBy() {
          textboxInfo.style.display = "none";
          formMessage.innerHTML = '<div class="form-confirmation">Message sent!</div>';
       } 
-   contactForm.reset();
+   contactForm.focus();
    }
 
    contactForm.addEventListener("submit", submitForm);
