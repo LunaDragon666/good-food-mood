@@ -147,6 +147,11 @@
   flex-wrap: wrap;
 }
 
+.home {
+  color: #e86007;
+  font-weight: bold;
+}
+
 @media (min-width: 1070px) and (max-width: 1295px) {
   #warning {
     margin-top: 10px;
