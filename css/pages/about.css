@@ -15,7 +15,7 @@
     align-items: center;
     justify-content: center;
     gap: 50px;
-    padding: 5rem 1.5rem 10.75rem;
+    padding: 5rem 1.5rem 7.5rem;
 }
 
 .intro div {
@@ -48,24 +48,16 @@ b, .big-bold {
     align-items: center;
     gap: 20px;
     justify-content: center;
-    padding: 3rem 1.5rem 10.25rem;
+    padding: 3rem 1.5rem 7.5rem;
+}
+
+.dietary-iconset p {
+    text-align: center;
 }
 
 h3 {
     font-size: 24px;
     margin-bottom: -1rem;
-}
-.food-tag {
-    background: #ffd88e;
-    padding: .5rem 1rem;
-}
-
-.icon-set {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 1.4rem;
-    margin-top: 2rem;
 }
 
 .note {
@@ -88,7 +80,7 @@ h3 {
     gap: 45px;
     justify-content: center;
     line-height: 25px;
-    padding: 2.5rem 1.5rem 3rem;
+    padding: 3rem 2rem 3rem;
 }
 
 .about div {
@@ -127,13 +119,6 @@ h3 {
         flex-direction: column;
         text-align: center;
     }
-    .icon-set {
-        flex-direction: column;
-        width: 100%;
-    }
-    .dietary-iconset, .icon-set {
-        text-align: center;
-    } 
     .note {
         margin-bottom: 1rem;
         margin-top: 0;
