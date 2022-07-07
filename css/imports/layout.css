@@ -63,6 +63,17 @@ input[type=search] {
     100% { transform: rotate(360deg); }
   }
 
+  .back-btn {
+    display: none;
+    margin-bottom: 4.5rem;
+    margin-top: -1rem;
+  }
+
+  .back-btn a {
+    color: #e86007;
+    font-weight: bold;
+  }
+
   /* */
   .recipes {
     display: grid;
