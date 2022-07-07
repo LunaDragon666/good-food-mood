@@ -68,7 +68,7 @@ input[type=search] {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2.75rem;
 }
 
 .recipes img {
@@ -219,7 +219,7 @@ margin-top: 1rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 4rem 1.75rem 6.25rem;
+  padding: 4.25rem 1.75rem 6.5rem;
   text-align: center;
 }
 
