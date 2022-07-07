@@ -48,6 +48,7 @@ searchButton.onclick = function() {
     const searchInput = document.querySelector("#search-input").value;
     const newUrl = api + `?search=${searchInput}`;
     document.querySelector(".categories").style.display = "none";
+    document.querySelector(".back-btn").style.display = "block"; 
     header.style.display = "none";
     recipeList.innerHTML = "";
     getRecipes(newUrl);
