@@ -1,4 +1,5 @@
 const api = "https://goodfoodmood.monikalie.no/wp-json/wc/store/products";
+const header = document.querySelector(".header-banner");
 const recipeList = document.querySelector(".recipes");
 
 function displayRecipes(food) { 
@@ -45,6 +46,7 @@ searchButton.onclick = function() {
     document.querySelector(".loading").innerHTML = '<div class="loader"></div>';
     const searchInput = document.querySelector("#search-input").value;
     const newUrl = api + `?search=${searchInput}`;
+    header.style.display = "none";
     recipeList.innerHTML = "";
     getRecipes(newUrl);
   } 
