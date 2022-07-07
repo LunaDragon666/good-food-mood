@@ -68,7 +68,7 @@ input[type=search] {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
 }
 
 .recipes img {
@@ -105,7 +105,7 @@ input[type=search] {
 .recipe-info {
     background: #fff1cb;
     margin-top: -5px;
-    padding: 1rem;
+    padding: 1.5rem 1.5rem 2rem;
 }
 
 .recipe-info a {
@@ -128,6 +128,7 @@ input[type=search] {
   text-align: center;
   transition: .5s;
   display: inline-block;
+  margin-top: 1rem;
   width: 100%;
 }
 
@@ -218,7 +219,7 @@ margin-top: 1rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 2.5rem 1.75rem 5.25rem;
+  padding: 4rem 1.75rem 6.25rem;
   text-align: center;
 }
 
