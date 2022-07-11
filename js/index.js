@@ -1,4 +1,4 @@
-const api = "https://goodfoodmood.monikalie.no/wp-json/wc/store/products";
+const api = "https://goodfoodmood.monikalie.no/wp-json/wc/store/products?per_page=12";
 const categories = document.querySelectorAll(".categories");
 const header = document.querySelector(".header-banner");
 const recipeList = document.querySelector(".recipes");
