@@ -1,4 +1,4 @@
-const api = "https://goodfoodmood.monikalie.no/wp-json/wc/store/products?per_page=12";
+const api = "https://goodfoodmood.monikalie.no/wp-json/wc/store/products";
 const categories = document.querySelectorAll(".categories");
 const header = document.querySelector(".header-banner");
 const recipeList = document.querySelector(".recipes");
@@ -37,7 +37,7 @@ async function getRecipes(url) {
     recipeList.innerHTML = theError("Failed to upload recipes!");
   } 
 }
-getRecipes(api);
+getRecipes(api + "?per_page=12");
 
 // Searchfield
 const searchButton = document.querySelector(".button");
