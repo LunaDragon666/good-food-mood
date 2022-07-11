@@ -1,6 +1,6 @@
 footer {
     align-items: center;
-    background: #007a4e;
+    background: #063a27;
     color: white;
     display: flex;
     flex-direction: row;
@@ -33,7 +33,7 @@ footer #links {
 }
 
 .top-btn i:hover, #links i:hover {
-    color: #ee911f; 
+    color: #def1df; 
 }
 
 .wrapper {
