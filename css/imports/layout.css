@@ -27,7 +27,7 @@ input[type=search] {
     margin: 0;
     padding: 0 20px;
     background-color: white;
-    color: #352711;
+    color: #262626;
     border: 0;
     height: 60px;
   }
@@ -130,7 +130,7 @@ input[type=search] {
 }
 
 .cta {
-  background: #06a56b;
+  background: #097850;
   color: white !important;
   cursor: pointer;
   padding: 1rem;
@@ -142,7 +142,7 @@ input[type=search] {
 }
 
 .cta:hover {
-  background: #007a4e;
+  background: #032016;
 }
 
   @media only screen and (max-width: 600px) {
