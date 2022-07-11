@@ -4,12 +4,13 @@
   }
 
   .logo-wrap {
-    width: 333px;
+    width: 360px;
+    padding-left: 1rem;
 }
 
 .main-header {
     width: 100%;
-    background: #01403A;
+    background: #038c5a;
 }
 
 .menu-wrap {
