@@ -1,5 +1,6 @@
 .home-content {
-  padding: 1.5rem 1.4rem 2rem;
+  background: #f8f7f5;
+  padding: 1.5rem 2rem 2.5rem;
 }
 
 #container {
@@ -37,7 +38,7 @@ input[type=search] {
     margin: 0;
     padding: 0 20px;
     color: #fff;
-    background-color: #f58712;
+    background-color: #FA6F1F;
     font-size: 24px;
     font-weight: bold;
     transition: .5s;
@@ -47,14 +48,14 @@ input[type=search] {
   }
 
 .button:hover {
-  background: #e86007;
+  background: #FF4B15;
 }
 
   .loader {
     animation: spin 2s linear infinite;
-    border: 15px solid #ffe7bb;
+    border: 15px solid #a3e6cd;
     border-radius: 50%;
-    border-top: 15px solid #e86007;
+    border-top: 15px solid #06a56b;
     height: 76px;
     margin: 0 auto;
     width: 75px;
@@ -86,13 +87,13 @@ input[type=search] {
   /* */
   .recipes {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
     gap: 2rem;
     margin-bottom: 2.75rem;
 }
 
 .recipes img {
-    height: 300px;
+    height: 275px;
     object-fit: cover;
     width: 100%;
 }
@@ -106,30 +107,14 @@ input[type=search] {
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
 }
 
-/* [1] The container */
-.img-hover-zoom {
-  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
-  height: 300px;
-}
-
-/* [2] Transition property for smooth transformation of images */
-.img-hover-zoom img {
-  transition: transform .5s ease;
-}
-
-/* [3] Finally, transforming the image when container gets hovered */
-.img-hover-zoom:hover img {
-  transform: scale(1.5);
-}
-
 .recipe-info {
-    background: #fff1cb;
-    margin-top: -5px;
-    padding: 1.5rem 1.5rem 2rem;
+    background: #fff;
+    margin-top: -24px;
+    padding: 2.5rem 1.5rem 2rem;
 }
 
 .recipe-info a {
-      color: #352711;
+      color: #262626;
 }
 
 .recipe-details {
@@ -141,7 +126,7 @@ input[type=search] {
 }
 
 .cta {
-  background: #ee911f;
+  background: #06a56b;
   color: white !important;
   cursor: pointer;
   padding: 1rem;
@@ -153,7 +138,7 @@ input[type=search] {
 }
 
 .cta:hover {
-  background: #e86007;
+  background: #007a4e;
 }
 
   @media only screen and (max-width: 600px) {
@@ -215,7 +200,7 @@ margin-top: 1rem;
 }
 
 .categories button {
-  background: #F2C36B;
+  background: #F2A413;
   border: none;
   cursor: pointer;
   font-family: inherit;
@@ -229,12 +214,11 @@ margin-top: 1rem;
 }
 
 .categories button:focus {
-  background: #e86007;
-  color: white;
+  background: #FA6F1F;
 }
 
 .subscribe-field {
-  background: #F2C36B;
+  background: #d3f9c0;
   display: flex;
   flex-direction: column;
   align-items: center;
