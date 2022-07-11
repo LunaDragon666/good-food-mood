@@ -4,7 +4,7 @@
   }
 
 .header-banner {
-    background-color: #72C14D;
+    background-color: #c1efc2;
     /* background-image: url("../../img/header.jpg"); */
     background-position: center;
     background-repeat: no-repeat;
@@ -14,18 +14,19 @@
 }
 
 .header-content {
-    padding-top: 2.5rem;
+    padding-top: 4rem;
     text-align: center;
 }
 
 .header-content h1 {
+    color: #038C5A;
     font-family: 'Averta-Regular';
     font-size: 28px;
     text-transform: capitalize;
 }
 
 .header-content span {
-    color: white;
+    color: #038C5A;
     font-size: 20px;
 }
 
@@ -45,7 +46,7 @@ hr:after {
 
 @media screen and (min-width: 991px) {
     .header-banner {
-        height: 333px;
+        height: 340px;
     }
     .header-content h1 {
         font-size: 50px;
