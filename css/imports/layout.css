@@ -171,7 +171,13 @@ margin-top: 1rem;
 #subscribed {
   width: 100%;
 }
-.categories button {width: 100%;}
+.categories button {
+  width: 100%;
+}
+.recipe-info, .recipe-details {
+  text-align: center;
+  justify-content: center;
+}
   }
 
 .btn i {
