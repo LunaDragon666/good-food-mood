@@ -4,10 +4,11 @@
 @import "../imports/footer.css";
 
 .textbox {
-  background: #ffe5b4;
+  background: #def1df;
+  color: #262626;
   margin: 1rem 0 2rem;
   padding: 1rem 1rem 3rem;
-  max-width: 920px;
+  max-width: 900px;
   line-height: 25px;
 }
 
