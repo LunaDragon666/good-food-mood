@@ -15,9 +15,8 @@
 }
 
 .header-content {
-    position: absolute;
-    top: 17rem;
-    left: 3rem;
+    padding-top: 3rem;
+    text-align: center;
 }
 
 .header-content h1 {
