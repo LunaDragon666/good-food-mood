@@ -3,10 +3,17 @@
 }
 
 #container {
+    background: #72C14D;
     display: flex;
     flex-direction: row;
-    height: 60px;
+    padding: 2rem;
 }
+
+::placeholder { 
+  color: #352711;
+  opacity: 1; 
+}
+
   
 input[type=search] {  
     width: 100%;
@@ -18,7 +25,8 @@ input[type=search] {
   input[type=search] {
     margin: 0;
     padding: 0 20px;
-    background-color: #f8f8f8;
+    background-color: white;
+    color: #352711;
     border: 0;
     height: 60px;
   }
@@ -34,6 +42,7 @@ input[type=search] {
     font-weight: bold;
     transition: .5s;
     width: 70px;
+    height: 60px;
     white-space: nowrap;
   }
 
