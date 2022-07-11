@@ -17,7 +17,6 @@ food.forEach(function(recipe) {
                                     <h3>${recipe.name}</h3>
                                     <div class="recipe-details">
                                         <p><i class="fa fa-clock"></i> ${recipe.prices.price} min</p>
-                                        <p><i class="fas fa-fire"></i> ${recipe.prices.regular_price} kcal</p>
                                     </div>
                                   <a class="cta" href="pages/recipes.html?id=${recipe.id}">Get the recipe</a>
                                 </div>
