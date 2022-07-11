@@ -4,14 +4,14 @@
 }
 
 #container {
-    background: #72C14D;
+    background: #c1efc2;
     display: flex;
     flex-direction: row;
     padding: 2rem;
 }
 
 ::placeholder { 
-  color: #352711;
+  color: #262626;
   opacity: 1; 
 }
 
@@ -38,7 +38,7 @@ input[type=search] {
     margin: 0;
     padding: 0 20px;
     color: #fff;
-    background-color: #FA6F1F;
+    background-color: #06a56b;
     font-size: 24px;
     font-weight: bold;
     transition: .5s;
@@ -48,7 +48,7 @@ input[type=search] {
   }
 
 .button:hover {
-  background: #FF4B15;
+  background: #007a4e;
 }
 
   .loader {
@@ -80,8 +80,12 @@ input[type=search] {
   }
 
   .back-btn a {
-    color: #e86007;
+    color: #018354;
     font-weight: bold;
+  }
+
+  .back-btn a:hover {
+    text-decoration: underline;
   }
 
   /* */
@@ -200,8 +204,9 @@ margin-top: 1rem;
 }
 
 .categories button {
-  background: #F2A413;
+  background: #007a4e;
   border: none;
+  color: white;
   cursor: pointer;
   font-family: inherit;
   font-size: 16px;
@@ -210,15 +215,15 @@ margin-top: 1rem;
 }
 
 .categories button:hover {
-  background: #ee911f;
+  background: #074831;
 }
 
 .categories button:focus {
-  background: #FA6F1F;
+  background: #032016;
 }
 
 .subscribe-field {
-  background: #d3f9c0;
+  background: #def1df;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -253,9 +258,9 @@ b {
 }
 
 .sub-btn {
-  background: #ee911f;
+  background: #0e6c4c;
   border: none;
-  color: white;
+  color: #ffffff;
   cursor: pointer;
   font-family: inherit;
   font-size: 14px;
@@ -269,5 +274,5 @@ b {
 }
 
 .sub-btn:hover {
-  background: #e86007;
+  background: #074831;
 }
