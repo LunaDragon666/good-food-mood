@@ -7,9 +7,9 @@
 
 .sub-error {
     display: none;
-    color: #e6003d;
-    border: 1px solid #e6003d;
-    background: #fcd4d4;
+    color: #c30c0c;
+    border: 1px solid #c30c0c;
+    background: #ffdada;
     font-size: 0.9rem;
     margin: 1rem 0 -3rem;
     padding: 5px;
