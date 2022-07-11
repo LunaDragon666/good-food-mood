@@ -174,10 +174,6 @@ margin-top: 1rem;
 .categories button {
   width: 100%;
 }
-.recipe-info, .recipe-details {
-  text-align: center;
-  justify-content: center;
-}
   }
 
 .btn i {
