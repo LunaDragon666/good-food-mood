@@ -9,7 +9,6 @@
 }
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: row;
     height: 450px;
@@ -36,7 +35,7 @@
   }
 
   .card-content {
-      background: #FFF1D6;
+      background: #ffffff;
       padding: 2.5rem 3rem 4rem;
       display: flex;
       flex-direction: column;
@@ -74,7 +73,8 @@
 }
 
 .recipe-content div:first-child {
-  background: aliceblue;
+  background: #fafffa;
+  color: #097850;
   padding: 1rem 1rem 2rem;
 }
 
@@ -87,13 +87,13 @@
 }
 
 .recipe-item {
-    border-bottom: 1px solid #85c5fd;
+    border-bottom: 1px solid #41c797;
     margin-bottom: .5rem;
     padding-bottom: .5rem;
 }
 
 .recipe-content div:nth-child(2) {
-  background: #FBF8F3;
+  background: white;
   padding: 1rem 3rem 2rem;
 }
 
@@ -114,7 +114,7 @@
 }
 
 .step {
-  color: #e86007;
+  color: #097850;
   margin-bottom: 1.5rem;
 }
 
@@ -132,7 +132,7 @@
 }
 
 .tag {
-  background: #ee911f;
+  background: #08764e;
   color: white;
   font-size: 14px;
   padding: .5rem 2rem;
@@ -140,24 +140,21 @@
 }
 
 #warning {
-  background: #ffd2d2;
-  border: 1px solid #ff4949;
-  color: #ef0000;
+    color: #c30c0c;
+    border: 1px solid #c30c0c;
+    background: #ffdada;;
   display: flex;
   flex-wrap: wrap;
 }
 
 .home {
-  color: #e86007;
+  color: #018354;
   font-weight: bold;
 }
 
 @media (min-width: 1070px) and (max-width: 1295px) {
   #warning {
     margin-top: 10px;
-  }
-  .thumbnail {
-    top: 155px !important;
   }
 }
 
@@ -190,13 +187,10 @@
     .tags div:first-child {
   margin-bottom: 10px;
 }
-    .thumbnail {
-      top: 154px !important;
-    }
   }
 
   .link-wrap {
-    margin: 0 auto 1rem;
+    margin: 0 auto 2rem;
     max-width: 1280px;
 }
 
@@ -210,7 +204,7 @@
 
 /* */
 .thumbnail {
-  background: rgb(255 255 255 / 50%);
+  background: #c1efc2;
   display: inline-block;
   position: absolute;
   overflow: hidden;
@@ -218,7 +212,6 @@
   height: auto;
   width: 50px;
   height: 50px;
-  top: 160px;
   transition: .5s;
 }
 
@@ -235,19 +228,16 @@
 }
 
 .thumbnail i {
-  color: #352711;
+  color: #262626;
   cursor: pointer;
   font-size: 25px;
   padding: .75rem;
-}
-
-.thumbnail:hover {
-  background: #ee911f;
+  transition: .5s;
 }
 
 .modal-overlay {
   color: white;
-  background: rgb(0, 0, 0, 0.95);
+  background: rgb(10 10 10 / 95%);
   bottom: 0;
   left: 0;
   right: 0;
@@ -291,10 +281,13 @@ input:checked ~ .modal-overlay{
 }
 
     .close-btn i {
-    color: white;
+    background: #c1efc2;
+    color: #262626;
     cursor: pointer;
-    font-size: 3rem;
-    margin: 2rem 0 1rem;
+    font-size: 1.5rem;
+    margin: 2rem 0;
+    padding: 1.275rem 1.75rem;
+    transition: .5s;
 }
 
 .error-message {
