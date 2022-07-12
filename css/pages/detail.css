@@ -25,7 +25,7 @@
   .card img {
       height: auto;
       object-fit: cover;
-      width: 35%;
+      width: 425px;
   }
 
   .card p {
