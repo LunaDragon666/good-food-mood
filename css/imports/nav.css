@@ -3,6 +3,10 @@
     src: url(../../fonts/Apricot.otf) format("opentype");
   }
 
+  .logo {
+    font-size: 24px;
+  }
+
   .logo-wrap {
     width: 360px;
     padding-left: 1rem;
