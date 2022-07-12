@@ -21,7 +21,7 @@ function checkIfFormIsPassingBy() {
       error = true;
    }
 
-   if (letterLength(subject.value, 10) === true) {
+   if (letterLength(subject.value, 9) === true) {
       subjectError.style.display = "none";
    } else {
       subjectError.style.display = "block";
@@ -35,7 +35,7 @@ function checkIfFormIsPassingBy() {
       error = true;
    }
 
-   if (letterLength(message.value, 15) === true) {
+   if (letterLength(message.value, 14) === true) {
       messageError.style.display = "none";
    } else {
       messageError.style.display = "block";
@@ -51,7 +51,13 @@ function checkIfFormIsPassingBy() {
       if(!theErrors) {
          contactForm.style.display = "none";
          textboxInfo.style.display = "none";
-         formMessage.innerHTML = '<div class="form-confirmation">Message sent!</div>';
+         formMessage.innerHTML = `
+                                    <a class="back" href="../index.html">Home</a> <span>/ Contact</span>
+                                 <div class="form-confirmation">
+                                    Message sent!
+                                 </div>
+                                 <div class="arrow-down"></div>
+                              `;
       } 
    contactForm.focus();
    }
