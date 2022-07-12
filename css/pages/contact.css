@@ -15,9 +15,9 @@
 /* Form validations */
 .contact-error {
   display: none;
-  color: #e6003d;
-  border: 1px solid #e6003d;
-  background: rgb(251 128 128 / 10%);
+  color: #c30c0c;
+  border: 1px solid #c30c0c;
+  background: #ffdada;
   margin: -11px 0 10px 0;
   padding: 5px;
 }
@@ -27,11 +27,10 @@
 }
 
 .form-confirmation {
-  background: rgb(132, 190, 45, 0.75);
-  border: 1px solid #629f08;
-  color: #001e1b;
+  background: #21b37e;
+  color: white;
   margin-top: 3rem;
-  padding: 1rem;
+  padding: 1.5rem;
 }
 
 /* */
@@ -73,10 +72,12 @@ textarea {
 }
 
 .msg-btn {
-  background: #ee911f;
+  background: #097850;
   border: none;
-  color: inherit;
+  border-radius: 0; /* iphone */
+  color: white;
   cursor: pointer;
+  height: 75px;
   letter-spacing: 2px;
   margin: 1.5rem 0 0 0;
   padding: 1rem;
@@ -85,8 +86,7 @@ textarea {
   width: 100%;
 }
 .msg-btn:hover {
-  background: #e86007;
-  color: white;
+  background: #032016;
 }
 
 @media (min-width: 1024px) {
@@ -105,6 +105,25 @@ textarea {
   width: 300px;
 }
 .form-confirmation {
-  margin-top: 3.5rem;
+  margin-top: 2.5rem;
 }
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #21b37e;
+}
+
+.back {
+  color: #018354;
+  display: inline-block;
+  font-weight: bold;
+  margin-top: .75rem;
+}
+
+.back:hover {
+  text-decoration: underline;
 }
