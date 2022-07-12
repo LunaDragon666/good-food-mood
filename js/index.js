@@ -37,7 +37,7 @@ async function getRecipes(url) {
     recipeList.innerHTML = theError("Failed to upload recipes!");
   } 
 }
-getRecipes(api + "?per_page=12");
+getRecipes(api); //  + "?per_page=12"
 
 // Searchfield
 const searchButton = document.querySelector(".button");
@@ -63,7 +63,7 @@ searchButton.onclick = function() {
       }
       else {
         const categoryChosen = event.target.value;
-        newUrl = api + `?category=${categoryChosen}`
+        newUrl = api + `?category=${categoryChosen}`;
       } 
       recipeList.innerHTML = ""; 
       getRecipes(newUrl);
