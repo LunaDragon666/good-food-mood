@@ -9,7 +9,7 @@
 }
 
 .intro {
-    background: #D7E5DA;
+    background: #c1efc2;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -74,7 +74,7 @@ h3 {
 
 .about {
     align-items: center;
-    background: #ffe7e2;
+    background: #def1df;
     display: flex;
     flex-direction: row;
     gap: 45px;
