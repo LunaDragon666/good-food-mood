@@ -135,7 +135,7 @@
   background: #08764e;
   color: white;
   font-size: 14px;
-  padding: .5rem 2rem;
+  padding: .5rem 1rem;
   text-transform: uppercase;
 }
 
@@ -150,12 +150,6 @@
 .home {
   color: #018354;
   font-weight: bold;
-}
-
-@media (min-width: 1070px) and (max-width: 1295px) {
-  #warning {
-    margin-top: 10px;
-  }
 }
 
   @media (max-width: 1069px) {
