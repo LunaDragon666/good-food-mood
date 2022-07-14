@@ -72,7 +72,6 @@ function createRecipe(recipe) {
             <div>
             <span class="tag">&#10003; ${recipe.tags[0].name}</span>
             <span class="tag">&#10003; ${recipe.tags[1].name}</span>
-            <span class="tag">&#10003; ${recipe.tags[2].name}</span>
             </div>
             <div>
             <span class="tag" id="warning">
