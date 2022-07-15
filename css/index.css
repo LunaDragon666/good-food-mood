@@ -1,4 +1,4 @@
-/* Search bar */
+/* SEARCHBAR */
 .search-field {
     background: #c1efc2;
     display: var(--default-layout);
@@ -9,7 +9,7 @@
 input[type=search] {
     background: var(--unset-color);
     border: var(--unset);
-    color: #262626;
+    color: var(--content-color);
     font-family: var(--input-text);
     font-size: var(--input-text);
     height: var(--search-bar);
@@ -17,14 +17,15 @@ input[type=search] {
     padding: 0 20px;
     width: var(--content-width);
 }
-  
+
+/* Search button */
 .search-btn {
     border: var(--default-text);
     cursor: var(--cursor-design);
     margin: var(--unset);
     padding: 0 20px;
     color: var(--unset-color);
-    background-color: #06a56b;
+    background: #06a56b;
     font-size: var(--paragraph-height);
     font-weight: bold;
     transition: var(--transition-time);
@@ -34,15 +35,67 @@ input[type=search] {
 }
 
 .search-btn:hover {
-    background: #007a4e;
+    background: var(--button-hover);
 }
 
-/* Subscription field */
-.confirmation {
-    margin-top: 2rem;
-    background: #21b37e;
-    padding: .5rem 1rem 2rem 1rem;
+/* SUBSCRIPTION FIELD */
+.sub-form {
+    display: var(--default-layout);
+    flex-direction: var(--row-layout);
+    margin-top: 2.5rem;
+}
+
+.sub-form input {
+    border: var(--default-text);
+    font-family: var(--input-text);
+    padding: var(--default-space);
+    width: 250px;
+}
+
+.subscribe-field {
+    background: #def1df;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4.25rem 1.75rem 6.5rem;
+    text-align: center;
+}
+  
+.subscribe-field h2 {
+    margin-bottom: .5rem;
+}
+  
+.subscribe-field p {
+    margin-top: var(--default-space);
+}
+
+/* Subscription button */
+.sub-btn {
+    background: #0e6c4c;
+    border: none;
     color: var(--unset-color);
+    cursor: var(--cursor-design);
+    font-family: var(--input-text);
+    font-size: 14px;
+    letter-spacing: 1px;
+    height: 48px;
+    padding: .5rem .75rem;
+    text-transform: uppercase;
+    transition: var(--transition-time);
+    width: 120px;
+}
+  
+.sub-btn:hover {
+    background: var(--button-hover);
+}
+
+/* Subscription confirmation */
+.confirmation {
+    background: #21b37e;
+    color: var(--unset-color);
+    margin-top: 2rem;
+    padding: .5rem 1rem 2rem 1rem;
 }
 
 .confirmation p {
@@ -50,14 +103,15 @@ input[type=search] {
 }
 
 .arrow-down {
-    width: var(--unset);
-    height: var(--unset);
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     border-top: 20px solid #21b37e;
+    height: var(--unset);
     margin: 0 auto -3.5rem;
+    width: var(--unset);
 }
 
+/* Subscription error */
 .error-message {
     background: #ffb8b8;
     border: 1px solid #ff4949;
@@ -77,7 +131,22 @@ input[type=search] {
 }
 
 @media only screen and (max-width: 600px) {
+    .sub-form {
+        flex-direction: var(--column-layout) !important;
+        gap: 10px;
+        margin-top: 2.5rem;
+    }
+    .sub-form, input, .sub-btn {
+        width: var(--content-width) !important;
+    }
+    .sub-btn {
+        height: 50px;
+        margin-top: var(--default-space);
+    }
     .sub-error {
         margin: 1rem 0 0;
+    }
+    #subscribed {
+        width: var(--content-width);
     }
 }
