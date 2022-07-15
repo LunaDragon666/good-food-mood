@@ -1,3 +1,5 @@
+
+
 /* SEARCHBAR */
 .search-field {
     background: #c1efc2;
@@ -39,6 +41,28 @@ input[type=search] {
 }
 
 /* Category selector */
+.categories {
+    color: var(--input-text);
+    display: var(--default-layout);
+    flex-wrap: wrap;
+    gap: var(--default-space);
+    margin-bottom: 2rem;
+}
+  
+.categories button {
+    background: #007a4e;
+    border: var(--default-text);
+    color: var(--unset-color);
+    cursor: var(--cursor-design);
+    font-family: var(--input-text);
+    font-size: 16px;
+    padding: .5rem 1.075rem;
+    transition: var(--transition-time);
+}
+  
+.categories button:focus, .categories button:hover {
+    background: var(--button-hover);
+}
 
 /* SUBSCRIPTION FIELD */
 .sub-form {
@@ -56,12 +80,12 @@ input[type=search] {
 
 .subscribe-field {
     background: #def1df;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: var(--default-layout);
+    flex-direction: var(--column-layout);
+    align-items: var(--content-layout);
+    justify-content: var(--content-layout);
     padding: 4.25rem 1.75rem 6.5rem;
-    text-align: center;
+    text-align: var(--content-layout);
 }
   
 .subscribe-field h2 {
@@ -75,7 +99,7 @@ input[type=search] {
 /* Subscription button */
 .sub-btn {
     background: #0e6c4c;
-    border: none;
+    border: var(--default-text);
     color: var(--unset-color);
     cursor: var(--cursor-design);
     font-family: var(--input-text);
@@ -133,6 +157,9 @@ input[type=search] {
 }
 
 @media only screen and (max-width: 600px) {
+    .categories button {
+        width: var(--content-width);
+    }
     .sub-form {
         flex-direction: var(--column-layout) !important;
         gap: 10px;
