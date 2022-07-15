@@ -4,7 +4,7 @@
 @import "../imports/header.css";
 @import "../imports/footer.css";
 
-.home-content {
+.content {
     padding: var(--unset);
 }
 
