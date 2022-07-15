@@ -1,3 +1,63 @@
+/* Search bar */
+.search-field {
+    background: #c1efc2;
+    display: var(--default-layout);
+    flex-direction: var(--row-layout);
+    padding: 2rem;
+}
+
+input[type=search] {
+    background: var(--unset-color);
+    border: var(--unset);
+    color: #262626;
+    font-family: var(--input-text);
+    font-size: var(--input-text);
+    height: var(--search-bar);
+    margin: var(--unset);
+    padding: 0 20px;
+    width: var(--content-width);
+}
+  
+.search-btn {
+    border: var(--default-text);
+    cursor: var(--cursor-design);
+    margin: var(--unset);
+    padding: 0 20px;
+    color: var(--unset-color);
+    background-color: #06a56b;
+    font-size: var(--paragraph-height);
+    font-weight: bold;
+    transition: var(--transition-time);
+    width: 70px;
+    height: var(--search-bar);
+    white-space: nowrap;
+}
+
+.search-btn:hover {
+    background: #007a4e;
+}
+
+/* Subscription field */
+.confirmation {
+    margin-top: 2rem;
+    background: #21b37e;
+    padding: .5rem 1rem 2rem 1rem;
+    color: var(--unset-color);
+}
+
+.confirmation p {
+    line-height: 14px;
+}
+
+.arrow-down {
+    width: var(--unset);
+    height: var(--unset);
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #21b37e;
+    margin: 0 auto -3.5rem;
+}
+
 .error-message {
     background: #ffb8b8;
     border: 1px solid #ff4949;
@@ -6,7 +66,7 @@
 }
 
 .sub-error {
-    display: none;
+    display: var(--default-text);
     color: #c30c0c;
     border: 1px solid #c30c0c;
     background: #ffdada;
@@ -14,26 +74,6 @@
     margin: 1rem 0 -3rem;
     padding: 5px;
     text-align: left;
-}
-
-.confirmation {
-    margin-top: 2rem;
-    background: #21b37e;
-    padding: .5rem 1rem 2rem 1rem;
-    color: white;
-}
-
-.confirmation p {
-  line-height: 14px;
-}
-
-.arrow-down {
-  width: var(--unset);
-  height: var(--unset);
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-top: 20px solid #21b37e;
-  margin: 0 auto -3.5rem;
 }
 
 @media only screen and (max-width: 600px) {
