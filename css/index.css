@@ -1,4 +1,65 @@
+.recipes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2.75rem;
+}
 
+.recipes img {
+    height: 275px;
+    object-fit: var(--image-content);
+    width: var(--content-width);
+}
+
+.recipe {
+    box-shadow: rgb(0 0 0 / 5%) 0px 1px 3px 0px;
+    transition: var(--transition-time);
+}
+
+.recipe:hover {
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+}
+
+.recipe-details {
+    display: var(--default-layout);
+    flex-direction: var(--row-layout);
+    justify-content: space-between;
+    margin-bottom: 1.6rem;
+    margin-top: 1.4rem;
+}
+
+.recipe-info {
+    background: var(--unset-color);
+    margin-top: -24px;
+    padding: 2.5rem 1.5rem 2rem;
+}
+
+.recipe-info a {
+    color: var(--content-color);
+}
+
+.info {
+    display: var(--default-layout);
+    flex-direction: var(--row-layout);
+    justify-content: space-between;
+    margin-top: .25rem;
+}
+
+.cta {
+    background: #097850;
+    color: var(--unset-color) !important;
+    cursor: var(--cursor-design);
+    padding: var(--default-space);
+    text-align: var(--content-layout);
+    transition: var(--transition-time);
+    display: inline-block;
+    margin-top: var(--default-space);
+    width: var(--content-width);
+}
+  
+.cta:hover {
+    background: var(--button-hover);
+}
 
 /* SEARCHBAR */
 .search-field {
@@ -39,6 +100,22 @@ input[type=search] {
 .search-btn:hover {
     background: var(--button-hover);
 }
+
+/* Search results ~ back button */
+.back-btn {
+    display: none;
+    margin-bottom: 4.5rem;
+    margin-top: var(--subheading-space);
+  }
+
+  .back-btn a {
+    color: #018354;
+    font-weight: bold;
+  }
+
+  .back-btn a:hover {
+    text-decoration: underline;
+  }
 
 /* Category selector */
 .categories {
