@@ -40,7 +40,7 @@ async function getRecipes(url) {
 getRecipes(api); //  + "?per_page=12"
 
 // Searchfield
-const searchButton = document.querySelector(".button");
+const searchButton = document.querySelector(".search-btn");
 
 searchButton.onclick = function() {
     document.querySelector(".loading").innerHTML = '<div class="loader"></div>';
