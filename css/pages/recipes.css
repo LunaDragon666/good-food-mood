@@ -9,24 +9,24 @@
 }
 
 .card {
-    display: flex;
-    flex-direction: row;
-    height: 450px;
-    max-width: 1280px;
-    margin: 0 auto;
-  }
+  display: flex;
+  flex-direction: row;
+  height: 450px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
 
-  .card h2 {
-    font-family: 'Averta-Regular';
-      font-size: var(--paragraph-height);
-    text-transform: uppercase;
-  }
+.card h2 {
+  font-family: 'Averta-Regular';
+  font-size: var(--paragraph-height);
+  text-transform: uppercase;
+}
 
-  .card img {
-      height: auto;
-      object-fit: cover;
-      width: 425px;
-  }
+.card img {
+  height: auto;
+  object-fit: cover;
+  width: 425px;
+}
 
   .card p {
   font-size: 15px;
