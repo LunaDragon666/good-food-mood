@@ -36,6 +36,7 @@
 hr {
     border: none;
 }
+
 hr:after {
     color: #038C5A;
     content: '∿∿∿∿∿∿∿∿∿∿';
