@@ -17,6 +17,7 @@
 :root {
     /* Color values */
     --background-color: #f8f7f5;
+    --button-hover: #000000;
     --content-color: #262626; 
     --unset-color: #ffffff;
     --warning-color: #c30c0c;
@@ -83,6 +84,20 @@ h3 {
 
 a {
     text-decoration: var(--default-text);
+}
+
+b {
+    text-decoration: var(--link-hover);
+}
+
+.content {
+    background: var(--background-color);
+    padding: 1.5rem 2rem 2.5rem;
+}
+  
+::placeholder { 
+    color: #262626;
+    opacity: 1; 
 }
 
 @media only screen and (max-width: 600px) {
