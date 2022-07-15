@@ -1,14 +1,4 @@
-.home-content {
-  background: #f8f7f5;
-  padding: 1.5rem 2rem 2.5rem;
-}
-
-::placeholder { 
-  color: #262626;
-  opacity: 1; 
-}
-
-  .loader {
+.loader {
     animation: spin 2s linear infinite;
     border: 15px solid #a3e6cd;
     border-radius: 50%;
@@ -107,27 +97,6 @@
       align-items: unset !important;
       flex-direction: column !important;
     }
-    
-    .select {
-      margin-bottom: 2.5rem;
-      width: 100% !important;
-    }
-    
-    .sub-form {
-    flex-direction: column !important;
-    gap: 10px;
-    margin-top: 2.5rem;
-}
-.sub-form, input, .sub-btn {
-  width: 100% !important;
-}
-.sub-btn {
-height: 50px;
-margin-top: var(--default-space);
-}
-#subscribed {
-  width: 100%;
-}
 .categories button {
   width: 100%;
 }
@@ -179,58 +148,4 @@ margin-top: var(--default-space);
 
 .categories button:focus {
   background: #032016;
-}
-
-.subscribe-field {
-  background: #def1df;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 4.25rem 1.75rem 6.5rem;
-  text-align: center;
-}
-
-.subscribe-field h2 {
-  margin-bottom: .5rem;
-}
-
-.subscribe-field p {
-  margin-top: var(--default-space);
-}
-
-b {
-  text-decoration: underline;
-}
-
-.sub-form {
-    display: flex;
-    flex-direction: row;
-    margin-top: 2.5rem;
-}
-
-.sub-form input {
-    border: none;
-    font-family: inherit;
-    padding: var(--default-space);
-    width: 250px;
-}
-
-.sub-btn {
-  background: #0e6c4c;
-  border: none;
-  color: #ffffff;
-  cursor: pointer;
-  font-family: inherit;
-  font-size: 14px;
-  letter-spacing: 1px;
-  height: 48px;
-  padding: .5rem .75rem;
-  text-transform: uppercase;
-  transition: var(--transition-time);
-  width: 120px;
-}
-
-.sub-btn:hover {
-  background: #074831;
 }
