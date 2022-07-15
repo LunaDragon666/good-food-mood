@@ -94,6 +94,13 @@ b {
     background: var(--background-color);
     padding: 1.5rem 2rem 2.5rem;
 }
+
+.heading {
+    align-items: baseline;
+    display: var(--default-layout);
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
   
 ::placeholder { 
     color: #262626;
@@ -103,5 +110,9 @@ b {
 @media only screen and (max-width: 600px) {
     h2 {
         font-size: 28px;
+    }
+    .heading {
+        align-items: unset !important;
+        flex-direction: var(--column-layout) !important;
     }
 }
