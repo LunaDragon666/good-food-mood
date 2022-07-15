@@ -9,7 +9,7 @@
   margin: 1rem 0 2rem;
   padding: 1rem 1rem 3rem;
   max-width: 900px;
-  line-height: 25px;
+  line-height: var(--paragraph-height);
 }
 
 /* Form validations */
@@ -45,7 +45,7 @@ textarea {
   border: 1px solid #c4c4c4;
   font-family: inherit;
   margin: 10px 0 10px 0;
-  padding: 1rem;
+  padding: var(--default-space);
 }
 
 textarea {
@@ -80,9 +80,9 @@ textarea {
   height: 75px;
   letter-spacing: 2px;
   margin: 1.5rem 0 0 0;
-  padding: 1rem;
+  padding: var(--default-space);
   text-transform: uppercase;
-  transition: .5s;
+  transition: var(--transition-time);
   width: 100%;
 }
 .msg-btn:hover {
