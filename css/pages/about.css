@@ -5,21 +5,22 @@
 @import "../imports/footer.css";
 
 .home-content {
-    padding: 0;
+    padding: var(--unset);
 }
 
+/* ABOUT ~ Intro */
 .intro {
     background: #c1efc2;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    display: var(--default-layout);
+    flex-direction: var(--row-layout);
+    align-items: var(--content-layout);
+    justify-content: var(--content-layout);
     gap: 50px;
     padding: 5rem 1.5rem 7.5rem;
 }
 
 .intro div {
-    max-width: 768px;
+    max-width: var(--tablet-portrait);
 }
 
 .intro p {
@@ -27,100 +28,92 @@
 }
 
 .intro img {
-    border-radius: 100%;
-    height: 150px;
-    object-fit: cover;
-    width: 150px;
+    border-radius: var(--content-width);
+    height: var(--rounded-image);
+    object-fit: var(--image-content);
+    width: var(--rounded-image);
 }
 
 b, .big-bold {
-    text-decoration: none;
+    text-decoration: var(--default-text);
 }
 
 .big-bold {
-    font-size: 20px;
+    font-size: var(--default-gap);
 }
 
+/* Content */
 .dietary-iconset {
     background: #FBF8F3;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    justify-content: center;
+    display: var(--default-layout);
+    flex-direction: var(--column-layout);
+    align-items: var(--content-layout);
+    gap: var(--default-gap);
+    justify-content: var(--content-layout);
     padding: 3rem 1.5rem 7.5rem;
 }
 
 .dietary-iconset p {
-    text-align: center;
+    text-align: var(--content-layout);
 }
 
-h3 {
-    font-size: 24px;
-    margin-bottom: -1rem;
+.dietary-iconset h3 {
+    font-size: var(--paragraph-height);
+    margin-bottom: var(--subheading-space);
 }
 
 .note {
-    margin-top: -1rem;
+    margin-top: var(--subheading-space);
 }
 
 .note b {
-    text-decoration: underline;
+    text-decoration: var(--link-hover);
 }
 
 .note i {
-    color: #e03d31;
+    color: var(--warning-color);
 }
 
+/* About */
 .about {
-    align-items: center;
+    align-items: var(--content-layout);
     background: #def1df;
-    display: flex;
-    flex-direction: row;
+    display: var(--default-layout);
+    flex-direction: var(--row-layout);
     gap: 45px;
-    justify-content: center;
-    line-height: 25px;
-    padding: 3rem 2rem 3rem;
+    justify-content: var(--content-layout);
+    line-height: var(--paragraph-height);
+    padding: 3rem 2rem 5rem;
 }
 
 .about div {
-    max-width: 768px;
-}
-
-.about img {
-    height: 275px;
-    object-fit: cover;
-    width: 275px;
+    max-width: var(--tablet-portrait);
 }
 
 .about h3 {
-    margin-bottom: 1.5rem;
+    margin-bottom: var(--default-margin);
 }
 
 .about p {
-    margin-top: 1rem;
+    margin-top: var(--default-space);
 }
 
 @media only screen and (max-width: 768px) {
     .about {
-        flex-direction: column;
-        gap: 0;
+        flex-direction: var(--column-layout);
+        gap: var(--unset);
         padding-bottom: 2.5rem;
-        padding-top: 1.5rem;
-    }
-    .about img {
-        height: auto;
-        width: 100%;
+        padding-top: var(--default-margin);
     }
     .dietary-iconset {
         padding-bottom: 4rem;
     }
     .intro {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: var(--column-layout);
+        text-align: var(--content-layout);
     }
     .note {
-        margin-bottom: 1rem;
-        margin-top: 0;
+        margin-bottom: var(--default-space);
+        margin-top: var(--unset);
     }
 }
