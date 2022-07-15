@@ -103,7 +103,7 @@ input[type=search] {
 
 /* Search results ~ back button */
 .back-btn {
-    display: none;
+    display: var(--default-text);
     margin-bottom: 2.5rem;
     margin-top: var(--subheading-space);
   }
@@ -114,7 +114,7 @@ input[type=search] {
   }
 
   .back-btn a:hover {
-    text-decoration: underline;
+    text-decoration: var(--link-hover);
   }
 
 /* Category selector */
