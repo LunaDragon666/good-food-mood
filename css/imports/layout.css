@@ -24,24 +24,24 @@ input[type=search] {
 }
   
   input[type=search] {
-    margin: 0;
+    margin: var(--unset);
     padding: 0 20px;
     background-color: white;
     color: #262626;
-    border: 0;
+    border: var(--unset);
     height: 60px;
   }
   
   .button {
     border: none;
     cursor: pointer;
-    margin: 0;
+    margin: var(--unset);
     padding: 0 20px;
     color: #fff;
     background-color: #06a56b;
-    font-size: 24px;
+    font-size: var(--paragraph-height);
     font-weight: bold;
-    transition: .5s;
+    transition: var(--transition-time);
     width: 70px;
     height: 60px;
     white-space: nowrap;
@@ -76,7 +76,7 @@ input[type=search] {
   .back-btn {
     display: none;
     margin-bottom: 4.5rem;
-    margin-top: -1rem;
+    margin-top: var(--subheading-space);
   }
 
   .back-btn a {
@@ -104,7 +104,7 @@ input[type=search] {
 
 .recipe {
   box-shadow: rgb(0 0 0 / 5%) 0px 1px 3px 0px;
-  transition: .5s;
+  transition: var(--transition-time);
 }
 
 .recipe:hover {
@@ -133,11 +133,11 @@ input[type=search] {
   background: #097850;
   color: white !important;
   cursor: pointer;
-  padding: 1rem;
+  padding: var(--default-space);
   text-align: center;
-  transition: .5s;
+  transition: var(--transition-time);
   display: inline-block;
-  margin-top: 1rem;
+  margin-top: var(--default-space);
   width: 100%;
 }
 
@@ -166,7 +166,7 @@ input[type=search] {
 }
 .sub-btn {
 height: 50px;
-margin-top: 1rem;
+margin-top: var(--default-space);
 }
 #subscribed {
   width: 100%;
@@ -201,7 +201,7 @@ margin-top: 1rem;
   color: inherit;
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: var(--default-space);
   margin-bottom: 2rem;
 }
 
@@ -213,7 +213,7 @@ margin-top: 1rem;
   font-family: inherit;
   font-size: 16px;
   padding: .5rem 1.075rem;
-  transition: .5s;
+  transition: var(--transition-time);
 }
 
 .categories button:hover {
@@ -239,7 +239,7 @@ margin-top: 1rem;
 }
 
 .subscribe-field p {
-  margin-top: 1rem;
+  margin-top: var(--default-space);
 }
 
 b {
@@ -255,7 +255,7 @@ b {
 .sub-form input {
     border: none;
     font-family: inherit;
-    padding: 1rem;
+    padding: var(--default-space);
     width: 250px;
 }
 
@@ -270,7 +270,7 @@ b {
   height: 48px;
   padding: .5rem .75rem;
   text-transform: uppercase;
-  transition: .5s;
+  transition: var(--transition-time);
   width: 120px;
 }
 
