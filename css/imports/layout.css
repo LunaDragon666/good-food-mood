@@ -1,24 +1,23 @@
 .loader {
-    animation: spin 2s linear infinite;
-    border: 15px solid #a3e6cd;
-    border-radius: 50%;
-    border-top: 15px solid #06a56b;
-    height: 76px;
-    margin: 0 auto;
-    width: 75px;
-    -webkit-animation: spin 2s linear infinite; /* Safari */
-  }
+  animation: spin 2s linear infinite;
+  border: 15px solid #a3e6cd;
+  border-radius: 50%;
+  border-top: 15px solid #06a56b;
+  height: 76px;
+  margin: 0 auto;
+  width: 75px;
+  -webkit-animation: spin 2s linear infinite; 
+}
   
-  /* Safari */
-  @-webkit-keyframes spin {
-    0% { -webkit-transform: rotate(0deg); }
-    100% { -webkit-transform: rotate(360deg); }
-  }
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
   
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
 
   .back-btn {
     display: none;
@@ -92,60 +91,9 @@
   background: #032016;
 }
 
-  @media only screen and (max-width: 600px) {
-    .heading {
-      align-items: unset !important;
-      flex-direction: column !important;
-    }
-.categories button {
-  width: 100%;
-}
-  }
-
-.btn i {
-    font-size: 35px;
-    position: absolute;
-    top: calc(50% - 0px);
-    left: 6px;
-}
-
 .info {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-top: .25rem;
-}
-
-.heading {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  justify-content: space-between;
-}
-
-.categories {
-  color: inherit;
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--default-space);
-  margin-bottom: 2rem;
-}
-
-.categories button {
-  background: #007a4e;
-  border: none;
-  color: white;
-  cursor: pointer;
-  font-family: inherit;
-  font-size: 16px;
-  padding: .5rem 1.075rem;
-  transition: var(--transition-time);
-}
-
-.categories button:hover {
-  background: #074831;
-}
-
-.categories button:focus {
-  background: #032016;
 }
