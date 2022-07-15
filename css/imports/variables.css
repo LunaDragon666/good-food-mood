@@ -24,12 +24,14 @@
     --column-layout: column;
     --content-layout: center;
     --content-width: 100%;
+    --cursor-design: pointer;
     --default-gap: 20px;
     --default-layout: flex;
     --image-content: cover;
     --rounded-image: 150px;
     --row-layout: row;
     --transition-time: .5s; 
+    --search-bar: 60px;
     --unset: 0;
     /* Media queries */
     --tablet-portrait: 768px;
@@ -39,6 +41,7 @@
     --default-text: none;
     --default-space: 1rem;
     --link-hover: underline;
+    --input-text: inherit;
     --paragraph-height: 25px;
     --primary-font: 'Averta-Regular'; 
     --secondary-font: 'Apricot';
