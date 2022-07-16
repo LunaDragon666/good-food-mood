@@ -22,7 +22,7 @@ textarea {
 }
 
 .textbox {
-  background: #def1df;
+  background: var(--asset-color);
   color: var(--content-color);
   line-height: var(--paragraph-height);
   margin: 1rem 0 2rem;
@@ -60,7 +60,7 @@ textarea {
   letter-spacing: 2px;
   margin: 1.5rem 0 0 0;
   padding: var(--default-space);
-  text-transform: uppercase;
+  text-transform: var(--cta-text);
   transition: var(--transition-time);
   width: var(--content-width);
 }
@@ -78,7 +78,7 @@ textarea {
 .back {
   color: #018354;
   display: inline-block;
-  font-weight: bold;
+  font-weight: var(--marked-text);
   margin-top: .75rem;
 }
 
