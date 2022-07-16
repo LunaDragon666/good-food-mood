@@ -1,17 +1,15 @@
-@font-face {
-    font-family: 'Apricot';
-    src: url(../../fonts/Apricot.otf) format("opentype");
-  }
-
-  .logo {
-    font-size: var(--paragraph-height);
-  }
-
-  .logo-wrap {
-    width: 360px;
+.logo-wrap {
     padding-left: var(--default-space);
+    width: 360px;
 }
 
+.logo {
+    color: var(--unset-color);
+    font-family: var(--secondary-font);
+    font-size: var(--paragraph-height);
+}
+
+/* NAVIGATION BAR */ 
 .main-header {
     width: var(--content-width);
     background: #08764e;
