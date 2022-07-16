@@ -4,7 +4,7 @@
 }
 
 .header-banner {
-    background-color: #c1efc2;
+    background: var(--tertiary-color);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -33,17 +33,6 @@
     margin-top: .25rem;
 }
 
-hr {
-    border: none;
-}
-
-hr:after {
-    color: #038C5A;
-    content: '∿∿∿∿∿∿∿∿∿∿';
-    letter-spacing: -4.5px;
-    font-size: 30px;
-}
-
 @media screen and (min-width: 991px) {
     .header-banner {
         height: 340px;
@@ -59,8 +48,5 @@ hr:after {
     }
     .header-content hr {
         margin-top: var(--default-space);
-    }
-    hr:after{
-        content: '∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿';
     }
 }
