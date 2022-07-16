@@ -16,6 +16,7 @@
 
 :root {
     /* Color values */
+    --asset-color: #def1df;
     --background-color: #f8f7f5;
     --button-hover: #000000;
     --content-color: #262626; 
@@ -24,12 +25,14 @@
     --breadcrumb-color: #018354; 
     --primary-color: #063a27;
     --secondary-color: #08764e; 
+    --tertiary-color: #c1efc2;
     --success: #21b37e;
     --unset-color: #ffffff;
     --warning-color: #c30c0c;
     /* Layout variables */
     --column-layout: column;
     --content-layout: center;
+    --content-stocking: wrap;
     --content-width: 100%;
     --cursor-design: pointer;
     --default-gap: 20px;
@@ -40,15 +43,18 @@
     --transition-time: .5s; 
     --search-bar: 60px;
     --unset: 0;
+    --white-space: space-between;
     /* Media queries */
     --tablet-portrait: 768px;
     /* Typography settings */
+    --cta-text: uppercase;
     --default-heading: capitalize;
     --default-margin: 1.5rem;
     --default-text: none;
     --default-space: 1rem;
     --link-hover: underline;
     --input-text: inherit;
+    --marked-text: bold;
     --paragraph-height: 25px;
     --primary-font: 'Averta-Regular'; 
     --secondary-font: 'Apricot';
@@ -88,6 +94,17 @@ h3 {
 	text-transform: var(--default-heading);
 }
 
+hr {
+    border: none;
+}
+
+hr:after {
+    color: #038C5A;
+    content: '∿∿∿∿∿∿∿∿∿∿';
+    letter-spacing: -4.5px;
+    font-size: 30px;
+}
+
 a {
     text-decoration: var(--default-text);
 }
@@ -104,8 +121,8 @@ b {
 .heading {
     align-items: baseline;
     display: var(--default-layout);
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-wrap: var(--content-stocking);
+    justify-content: var(--white-space);
 }
   
 ::placeholder { 
@@ -149,7 +166,7 @@ b {
     border: 1px solid var(--warning-color);
     background: var(--error-background);
     display: var(--default-layout);
-    flex-wrap: wrap;
+    flex-wrap: var(--content-stocking);
 }
 
 /* MESSAGE CONFIRMATION LAYOUTS */
@@ -189,6 +206,12 @@ b {
     }
     .sub-error {
         margin: 1rem 0 0;
+    }
+}
+
+@media screen and (min-width: 991px) {
+    hr:after{
+        content: '∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿';
     }
 }
 
