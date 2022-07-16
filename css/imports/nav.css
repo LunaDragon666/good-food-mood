@@ -12,7 +12,7 @@
 /* NAVIGATION BAR */ 
 .main-header {
     width: var(--content-width);
-    background: #08764e;
+    background: var(--primary-color);
 }
 
 .menu-wrap {
@@ -32,7 +32,7 @@
     top: var(--unset);
     left: var(--unset);
     width: var(--content-width);
-    height: 0vh;
+    height: var(--unset);
     transition: height .0s ease-out .4s, opacity .2s ease-out .2s, padding-left .2s ease-in 0s;
     opacity: var(--unset);
     display: var(--default-layout);
@@ -40,7 +40,7 @@
     align-items: var(--content-layout);
     z-index: 400;
     overflow: hidden;
-    background-color: rgb(240,240,240);
+    background-color: var(--unset-color);
     padding-left: var(--content-width);
 }
 
@@ -66,7 +66,7 @@
 
 /* Hamburger menu */
 .drop-trigger {
-    background: rgba(0,0,0,0);
+    background: transparent;
     border-width: var(--unset);
     height: 35px;
     margin-left: auto;
@@ -78,19 +78,20 @@
 
 /* Hamburger menu bars */
 .drop-trigger .btn-bar {
-    background: rgb(250,250,250);
+    background: var(--unset-color);
     border-radius: 25px;
     display: block;
     height: 4px;
     left: 50%;
     margin: 0 auto;
     position: absolute;
-    top: 20%;
+    top: 15%;
     transform: translateX(-50%) translateY(-0%) rotate(-0deg);
     transform-origin: 50% 50%;
     transition: all .4s ease-in 0s;
     width: 60%;
 }
+
 
 .btn-bar.middle {
     top: 50%;
@@ -103,13 +104,13 @@
 
 /* Hamburger menu ~ content */
 .nav-revert {
-    position: absolute;
+    background: var(--primary-color);
     display: block;
-    top: var(--unset);
-    left: var(--unset);
-    width: var(--content-width);
     height: var(--content-width);
-    background: #063a27;
+    left: var(--unset);
+    position: absolute;
+    top: var(--unset);
+    width: var(--content-width);
     z-index: 1;
 }
 
@@ -143,7 +144,7 @@
 #nav-tog:checked ~ .main-nav {
     height: 100vh;
     opacity: 1;
-    padding-left: 0%;
+    padding-left: var(--unset);
     transition: height .0s ease-in 0s, opacity .2s ease-in 0s, padding-left .23s ease-out .21s;
 }
 
@@ -153,19 +154,19 @@
         display: var(--default-text);
     }
     .main-nav {
-        background: rgba(0,0,0,0);
+        background: transparent;
         flex-direction: var(--row-layout);
         justify-content: flex-end;
         height: auto;
         opacity: 1;
-        padding-left: 0%;
+        padding-left: var(--unset);
         position: relative;
     }
     .nav-item:first-of-type{
         margin-top: var(--unset);
     }
     .nav-item {
-        color: rgb(250,250,250);
+        color: var(--unset-color);
         font-size: 18px;
         margin: 0 5px;
         width: auto;
