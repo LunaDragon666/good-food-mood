@@ -195,7 +195,51 @@ b {
 }
 
 /* BREADCRUMB LINKS */
+.back-btn {
+    display: var(--default-text);
+    margin-bottom: 2.5rem;
+    margin-top: var(--subheading-space);
+  }
 
+.back-btn a {
+    color: #018354;
+    font-weight: var(--marked-text);
+}
+
+.back-btn a:hover {
+    text-decoration: var(--link-hover);
+}
+
+/* Back to home button */
+.home {
+    color: var(--breadcrumb-color);
+    font-weight: var(--marked-text);
+}
+  
+.link-wrap {
+    margin: 0 auto 2rem;
+    max-width: 1280px;
+}
+  
+.link-wrap span {
+    text-transform: var(--default-heading);
+}
+  
+.link-wrap a:hover {
+    text-decoration: var(--link-hover);
+}
+
+/* Back home button from contact form */
+.back {
+    color: #018354;
+    display: inline-block;
+    font-weight: var(--marked-text);
+    margin-top: .75rem;
+}
+  
+.back:hover {
+    text-decoration: var(--link-hover);
+}
 
 @media (min-width: 1024px) {
     .contact-error {
