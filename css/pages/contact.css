@@ -74,18 +74,6 @@ textarea {
   margin-top: -1.4rem;
 }
 
-/* Back home button */
-.back {
-  color: #018354;
-  display: inline-block;
-  font-weight: var(--marked-text);
-  margin-top: .75rem;
-}
-
-.back:hover {
-  text-decoration: var(--link-hover);
-}
-
 @media (min-width: 1024px) {
   input,
   select,
