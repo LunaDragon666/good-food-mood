@@ -4,9 +4,8 @@ footer {
     color: var(--unset-color);
     display: var(--default-layout);
     flex-direction: var(--row-layout);
-    font-size: 12px;
     line-height: var(--paragraph-height);
-    justify-content: space-between;
+    justify-content: var(--white-space);
     flex-shrink: var(--unset);
     padding: 3.2rem 1.5rem;
 }
@@ -29,11 +28,6 @@ footer #links {
 .top-btn i {
     color: var(--unset-color);
     font-size: 36px;
-    transition: var(--transition-time);
-}
-
-.top-btn i:hover, #links i:hover {
-    color: #def1df; 
 }
 
 .wrapper {
