@@ -141,6 +141,15 @@ b {
     text-align: left;
 }
 
+/* Recipe warning label */
+#warning {
+    color: var(--warning-color);
+    border: 1px solid var(--warning-color);
+    background: var(--error-background);
+    display: var(--default-layout);
+    flex-wrap: wrap;
+}
+
 /* MESSAGE CONFIRMATION LAYOUTS */
 .form-confirmation {
     background: var(--success);
