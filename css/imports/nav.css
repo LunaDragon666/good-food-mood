@@ -83,7 +83,7 @@
     display: block;
     height: 4px;
     left: 50%;
-    margin: 0 auto;
+    margin: var(--center-elements);
     position: absolute;
     top: 15%;
     transform: translateX(-50%) translateY(-0%) rotate(-0deg);
