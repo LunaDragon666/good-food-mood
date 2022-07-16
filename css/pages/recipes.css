@@ -4,11 +4,11 @@
 @import "../imports/footer.css";
 
 .card {
-  display: flex;
-  flex-direction: row;
+  display: var(--default-layout);
+  flex-direction: var(--row-layout);
   height: 450px;
-  max-width: 1280px;
   margin: 0 auto;
+  max-width: 1280px;
 }
 
 .card h2 {
@@ -19,7 +19,7 @@
 
 .card img {
   height: auto;
-  object-fit: cover;
+  object-fit: var(--image-content);
   width: 425px;
 }
 
@@ -29,18 +29,19 @@
   margin-bottom: 2.5rem;
 }
 
+/* DETAIL PAGE LAYOUT ~ Card info */
 .card-content {
-  background: #ffffff;
-  padding: 2.5rem 3rem 4rem;
-  display: flex;
-  flex-direction: column;
+  background: var(--unset-color);
+  display: var(--default-layout);
+  flex-direction: var(--column-layout);
   justify-content: space-between;
+  padding: 2.5rem 3rem 4rem;
 }
 
 .food-info {
-  display: flex;
+  display: var(--default-layout);
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: var(--row-layout);
   gap: 10px;
   margin-bottom: 2rem;
 }
@@ -51,16 +52,16 @@
 
 .imgy i {
   background-color: rgb(255 255 255 / 75%);
+  bottom: var(--unset);
   cursor: pointer;
-  position: absolute;
-  bottom: 0px;
   font-size: var(--paragraph-height);
   padding: .75rem .5rem .5rem .75rem;
+  position: absolute;
 }
 
 .recipe-content {
-  display: flex;
-  flex-direction: row;
+  display: var(--default-layout);
+  flex-direction: var(--row-layout);
   max-width: 1280px;
   margin: 2rem auto;
 }
@@ -71,7 +72,7 @@
 
 .recipe-content div:first-child {
   background: #fafffa;
-  color: var(--cta-color);
+  color: var(--primary-color);
   padding: 1rem 1rem 2rem;
 }
 
@@ -80,17 +81,17 @@
 }
 
 .recipe-list {
-  list-style: none;
+  list-style: var(--default-text);
 }
 
 .recipe-item {
-  border-bottom: 1px solid #41c797;
+  border-bottom: 1px solid var(--primary-color);
   margin-bottom: .5rem;
   padding-bottom: .5rem;
 }
 
 .recipe-content div:nth-child(2) {
-  background: white;
+  background: var(--unset-color);
   padding: 1rem 3rem 2rem;
 }
 
@@ -104,7 +105,7 @@
 }
 
 .step span {
-  color: #352711;
+  color: var(--content-color);
   font-weight: normal;
   position: relative;
   left: var(--default-space);
@@ -130,7 +131,7 @@
 
 .tag {
   background: #08764e;
-  color: white;
+  color: var(--unset-color);
   font-size: 14px;
   padding: .5rem 1rem;
   text-transform: uppercase;
@@ -201,30 +202,30 @@
 .thumbnail>label {
   width: 100%;
   height: 100%;
-  color: #000000;
-  cursor: pointer;
+  color: var(--button-hover);
+  cursor: var(--cursor-design);
   display: inline-block;
   font-weight: bold;
   overflow: hidden;
-  background-size: cover;
+  background-size: var(--image-content);
   background-repeat: no-repeat;
 }
 
 .thumbnail i {
-  color: #262626;
-  cursor: pointer;
+  color: var(--content-color);
+  cursor: var(--cursor-design);
   font-size: 25px;
   padding: .75rem;
   transition: var(--transition-time);
 }
 
 .modal-overlay {
-  color: white;
+  color: var(--unset-color);
   background: rgb(10 10 10 / 95%);
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 0;
+  bottom: var(--unset);
+  left: var(--unset);
+  right: var(--unset);
+  top: var(--unset);
   position: fixed;
   z-index: 600;
 }
@@ -234,15 +235,15 @@
   margin: 0 auto;
   max-width: 500px;
   width: 90%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: var(--default-layout);
+  flex-direction: var(--column-layout);
+  justify-content: var(--content-layout);
+  align-items: var(--content-layout);
 }
 
 .modal-wrapper img {
-  min-width: 100%;
-  width: 100%;
+  min-width: var(--content-width);
+  width: var(--content-width);
   height: auto;
 }
 
@@ -265,7 +266,7 @@ input:checked ~ .modal-overlay{
 
 .close-btn i {
   background: #c1efc2;
-  color: #262626;
+  color: var(--content-color);
   cursor: pointer;
   font-size: var(--default-margin);
   margin: 2rem 0;
