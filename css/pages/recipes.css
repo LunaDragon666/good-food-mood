@@ -7,7 +7,7 @@
   display: var(--default-layout);
   flex-direction: var(--row-layout);
   height: 450px;
-  margin: 0 auto;
+  margin: var(--center-elements);
   max-width: 1280px;
 }
 
@@ -117,7 +117,7 @@ input:checked ~ .modal-overlay {
   display: var(--default-layout);
   flex-direction: var(--column-layout);
   justify-content: var(--content-layout);
-  margin: 0 auto;
+  margin: var(--center-elements);
   max-width: 500px;
   position: relative;
   width: 90%;
@@ -133,7 +133,7 @@ input:checked ~ .modal-overlay {
 .close-btn i {
   background: var(--tertiary-color);
   color: var(--content-color);
-  cursor: pointer;
+  cursor: var(--cursor-design);
   font-size: var(--default-margin);
   margin: 2rem 0;
   padding: 1.275rem 1.75rem;
