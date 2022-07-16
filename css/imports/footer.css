@@ -31,7 +31,7 @@ footer #links {
 }
 
 .wrapper {
-    flex: 1 0 auto;
+    flex: 1 var(--center-elements);
 }
 
 @media only screen and (max-width: 1024px) {
