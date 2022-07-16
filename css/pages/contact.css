@@ -40,7 +40,7 @@ textarea {
 .form-wrapper {
   display: var(--default-layout);
   flex-direction: var(--column-layout);
-  text-align: left;
+  text-align: var(--default-textalign);
 }
 
 .form-wrapper > * {
