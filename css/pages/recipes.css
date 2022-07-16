@@ -24,7 +24,7 @@
 }
 
 .card p {
-  font-size: 15px;
+  font-size: var(--default-font);
   line-height: var(--paragraph-height);
   margin-bottom: 2.5rem;
 }
