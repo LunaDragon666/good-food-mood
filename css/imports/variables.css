@@ -49,6 +49,7 @@
     --tablet-portrait: 768px;
     /* Typography settings */
     --cta-text: uppercase;
+    --default-font: 15px;
     --default-heading: capitalize;
     --default-margin: 1.5rem;
     --default-text: none;
