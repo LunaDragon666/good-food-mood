@@ -50,7 +50,9 @@
     margin-bottom: 2rem;
 }
 
-.imgy {position: relative;}
+.imgy {
+  position: relative;
+}
 
 .imgy i {
   background-color: rgb(255 255 255 / 75%);
@@ -74,7 +76,7 @@
 
 .recipe-content div:first-child {
   background: #fafffa;
-  color: #097850;
+  color: var(--cta-color);
   padding: 1rem 1rem 2rem;
 }
 
@@ -114,7 +116,7 @@
 }
 
 .step {
-  color: #097850;
+  color: var(--cta-color);
   margin-bottom: 1.5rem;
 }
 
@@ -282,11 +284,4 @@ input:checked ~ .modal-overlay{
     margin: 2rem 0;
     padding: 1.275rem 1.75rem;
     transition: var(--transition-time);
-}
-
-.error-message {
-  background: #ffb8b8;
-  border: 1px solid #ff4949;
-  color: #ef0000;
-  padding: var(--default-space);
 }
