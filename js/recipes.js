@@ -43,14 +43,14 @@ function createRecipe(recipe) {
 		                        <article class="card">
                                     <!-- MODAL IMAGE FUNCTION -->
                                     <div class="thumbnail">
-                                        <input type="checkbox" id="thumb-trigger1">
+                                        <input type="checkbox" id="thumb-trigger">
                                         <!-- Zoom-in button -->
-                                        <label class="tt1" for="thumb-trigger1"><i class="fas fa-search-plus"></i></label>
+                                        <label class="tt1" for="thumb-trigger"><i class="fas fa-search-plus"></i></label>
                                         <!-- Modal background -->
                                         <div class="modal-overlay">
                                             <div class="modal-wrapper">
                                                 <!-- Zoom-out button -->
-                                                <label for="thumb-trigger1" class="close-btn"><i class="fas fa-times"></i></label>
+                                                <label for="thumb-trigger" class="close-btn"><i class="fas fa-times"></i></label>
                                                 <!-- Modal image display on zoom-in -->
                                                 <img src="${recipe.images[0].src}" alt="${recipe.name}">
                                             </div>
@@ -64,12 +64,15 @@ function createRecipe(recipe) {
                                         <!-- Recipe info details -->
                                         <span class="food-info">
                                             <div>
+                                                <!-- Prep & cooking time -->
                                                 <i class="fa fa-clock"></i> ${recipe.prices.price} min.
                                             </div>
                                             <div>
+                                                <!-- Calories -->
                                                 | <i class="fas fa-fire"></i> ${recipe.prices.regular_price} kcal | 
                                             </div>
                                             <div>
+                                                <!-- Amount of serving in the recipe -->
                                                 <i class="fas fa-utensils"></i> ${recipe.attributes[1].terms[0].name} serving
                                             </div>
                                         </span>
