@@ -2,37 +2,6 @@
 @import "../imports/nav.css";
 @import "../imports/footer.css";
 
-.textbox {
-  background: #def1df;
-  color: var(--content-color);
-  margin: 1rem 0 2rem;
-  padding: 1rem 1rem 3rem;
-  max-width: 900px;
-  line-height: var(--paragraph-height);
-}
-
-/* Form validations */
-.contact-error {
-  display: none;
-  color: var(--warning-color);
-  border: 1px solid var(--warning-color);
-  background: #ffdada;
-  margin: -11px 0 10px 0;
-  padding: 5px;
-}
-
-#formMessage {
-  margin-top: -1.4rem;
-}
-
-.form-confirmation {
-  background: var(--unset-color);
-  color: var(--unset-color);
-  margin-top: 3rem;
-  padding: 1.5rem;
-}
-
-/* */
 form {
   margin-bottom: 3rem;
   text-align: var(--content-layout);
@@ -52,26 +21,37 @@ textarea {
   min-height: 100px;
 }
 
+.textbox {
+  background: #def1df;
+  color: var(--content-color);
+  line-height: var(--paragraph-height);
+  margin: 1rem 0 2rem;
+  max-width: 900px;
+  padding: 1rem 1rem 3rem;
+}
+
+/* CONTACT FORM LAYOUT */
 .contact {
-  max-width: 1000px;
   margin: 50px auto;
+  max-width: 1000px;
   text-align: var(--content-layout);
 }
 
 .form-wrapper {
   display: var(--default-layout);
-  text-align: left;
   flex-direction: var(--column-layout);
+  text-align: left;
 }
 
 .form-wrapper > * {
-  flex: 1;
   display: var(--default-layout);
+  flex: 1;
   flex-direction: var(--column-layout);
 }
 
+/* Form button */
 .msg-btn {
-  background: #097850;
+  background: var(--cta-color);
   border: var(--default-text);
   border-radius: var(--unset); 
   color: var(--unset-color);
@@ -89,34 +69,12 @@ textarea {
   background: var(--button-hover);
 }
 
-@media (min-width: 1024px) {
-  .form-wrapper {
-    flex-direction: var(--row-layout);
-  }
-  input,
-  select,
-  textarea {
-  margin: 10px 20px 10px 0px;
-}
-.contact-error {
-  margin: -11px 20px 10px 0;
-}
-.msg-btn {
-  width: 300px;
-}
-.form-confirmation {
-  margin-top: 2.5rem;
-}
+/* Form validations */
+#formMessage {
+  margin-top: -1.4rem;
 }
 
-.arrow-down {
-  width: var(--unset);
-  height: var(--unset);
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-top: 20px solid #21b37e;
-}
-
+/* Back home button */
 .back {
   color: #018354;
   display: inline-block;
@@ -126,4 +84,18 @@ textarea {
 
 .back:hover {
   text-decoration: var(--link-hover);
+}
+
+@media (min-width: 1024px) {
+  input,
+  select,
+  textarea {
+    margin: 10px 20px 10px 0px;
+  }
+  .form-wrapper {
+    flex-direction: var(--row-layout);
+  }
+  .msg-btn {
+    width: 300px;
+  }
 }
