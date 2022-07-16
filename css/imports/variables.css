@@ -23,6 +23,7 @@
     --error-background: #ffdada;
     --breadcrumb-color: #018354; 
     --primary-color: #063a27;
+    --secondary-color: #08764e; 
     --success: #21b37e;
     --unset-color: #ffffff;
     --warning-color: #c30c0c;
@@ -175,6 +176,9 @@ b {
     height: var(--unset);
     width: var(--unset);
 }
+
+/* BREADCRUMB LINKS */
+
 
 @media (min-width: 1024px) {
     .contact-error {
