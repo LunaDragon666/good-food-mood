@@ -19,6 +19,10 @@
     --background-color: #f8f7f5;
     --button-hover: #000000;
     --content-color: #262626; 
+    --cta-color: #097850;
+    --error-background: #ffdada; 
+    --primary-color: #063a27;
+    --success: #21b37e;
     --unset-color: #ffffff;
     --warning-color: #c30c0c;
     /* Layout variables */
@@ -103,8 +107,75 @@ b {
 }
   
 ::placeholder { 
-    color: #262626;
+    color: var(--content-color);
     opacity: 1; 
+}
+
+/* ERROR MESSAGES LAYOUT */
+.error-message {
+    background: var(--error-background);
+    border: 1px solid var(--warning-color);
+    color: var(--warning-color);
+    padding: var(--default-space);
+}
+
+/* Contactform input errors */
+.contact-error {
+    display: var(--default-text);
+    color: var(--warning-color);
+    border: 1px solid var(--warning-color);
+    background: var(--error-background);
+    margin: -11px 0 10px 0;
+    padding: 5px;
+}
+
+/* Subscription error */
+.sub-error {
+    display: var(--default-text);
+    color: var(--warning-color);
+    border: 1px solid var(--warning-color);
+    background: var(--error-background);
+    font-size: 0.9rem;
+    margin: 1rem 0 -3rem;
+    padding: 5px;
+    text-align: left;
+}
+
+/* MESSAGE CONFIRMATION LAYOUTS */
+.form-confirmation {
+    background: var(--success);
+    color: var(--unset-color);
+    margin-top: 3rem;
+    padding: 1.5rem;
+}
+
+/* Subscription confirmation */
+.confirmation {
+    background: var(--success);
+    color: var(--unset-color);
+    margin-top: 2rem;
+    padding: .5rem 1rem 2rem 1rem;
+}
+
+/* Decoration design element */
+.arrow-down {
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid var(--success);
+    height: var(--unset);
+    width: var(--unset);
+}
+
+@media (min-width: 1024px) {
+    .contact-error {
+        margin: -11px 20px 10px 0;
+    }
+    .form-confirmation {
+        margin-top: 2.5rem;
+    }
+    .sub-error {
+        margin: 1rem 0 0;
+    }
 }
 
 @media only screen and (max-width: 600px) {
