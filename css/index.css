@@ -100,22 +100,6 @@ input[type=search] {
     background: var(--button-hover);
 }
 
-/* Search results ~ back button */
-.back-btn {
-    display: var(--default-text);
-    margin-bottom: 2.5rem;
-    margin-top: var(--subheading-space);
-  }
-
-.back-btn a {
-    color: #018354;
-    font-weight: var(--marked-text);
-}
-
-.back-btn a:hover {
-    text-decoration: var(--link-hover);
-}
-
 /* Category selector */
 .categories {
     color: var(--input-text);
