@@ -30,6 +30,7 @@
     --unset-color: #ffffff;
     --warning-color: #c30c0c;
     /* Layout variables */
+    --center-elements: 0 auto;
     --column-layout: column;
     --content-layout: center;
     --content-stocking: wrap;
