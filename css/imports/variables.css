@@ -53,6 +53,7 @@
     --default-heading: capitalize;
     --default-margin: 1.5rem;
     --default-text: none;
+    --default-textalign: left;
     --default-space: 1rem;
     --link-hover: underline;
     --input-text: inherit;
@@ -159,7 +160,7 @@ b {
     font-size: 0.9rem;
     margin: 1rem 0 -3rem;
     padding: 5px;
-    text-align: left;
+    text-align: var(--default-textalign);
 }
 
 /* Recipe warning label */
