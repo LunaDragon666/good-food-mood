@@ -29,25 +29,6 @@
   margin-bottom: 2.5rem;
 }
 
-/* Back to home button */
-.home {
-  color: var(--breadcrumb-color);
-  font-weight: var(--marked-text);
-}
-
-.link-wrap {
-  margin: 0 auto 2rem;
-  max-width: 1280px;
-}
-
-.link-wrap span {
-  text-transform: var(--default-heading);
-}
-
-.link-wrap a:hover {
-  text-decoration: var(--link-hover);
-}
-
 /* DETAIL PAGE LAYOUT ~ Card info */
 .card-content {
   background: var(--unset-color);
