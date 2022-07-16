@@ -19,7 +19,7 @@
     display: var(--default-layout);
     flex-direction: var(--row-layout);
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: var(--white-space);
     align-items: var(--content-layout);
     width: var(--content-width);
     margin: auto;
@@ -60,7 +60,7 @@
 }
 
 .nav-item.active {
-    font-weight: bold;
+    font-weight: var(--marked-text);
     text-decoration: var(--default-text) !important;
 }
 
