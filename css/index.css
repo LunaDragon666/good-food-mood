@@ -23,7 +23,7 @@
 .recipe-details {
     display: var(--default-layout);
     flex-direction: var(--row-layout);
-    justify-content: space-between;
+    justify-content: var(--white-space);
     margin-bottom: 1.6rem;
     margin-top: 1.4rem;
 }
@@ -41,7 +41,7 @@
 .info {
     display: var(--default-layout);
     flex-direction: var(--row-layout);
-    justify-content: space-between;
+    justify-content: var(--white-space);
     margin-top: .25rem;
 }
 
@@ -63,7 +63,7 @@
 
 /* SEARCHBAR */
 .search-field {
-    background: #c1efc2;
+    background: var(--tertiary-color);
     display: var(--default-layout);
     flex-direction: var(--row-layout);
     padding: 2rem;
@@ -90,11 +90,10 @@ input[type=search] {
     color: var(--unset-color);
     background: #06a56b;
     font-size: var(--paragraph-height);
-    font-weight: bold;
+    font-weight: var(--marked-text);
     transition: var(--transition-time);
     width: 70px;
     height: var(--search-bar);
-    white-space: nowrap;
 }
 
 .search-btn:hover {
@@ -110,7 +109,7 @@ input[type=search] {
 
 .back-btn a {
     color: #018354;
-    font-weight: bold;
+    font-weight: var(--marked-text);
 }
 
 .back-btn a:hover {
@@ -121,7 +120,7 @@ input[type=search] {
 .categories {
     color: var(--input-text);
     display: var(--default-layout);
-    flex-wrap: wrap;
+    flex-wrap: var(--content-stocking);
     gap: var(--default-space);
     margin-bottom: 2rem;
 }
@@ -156,7 +155,7 @@ input[type=search] {
 }
 
 .subscribe-field {
-    background: #def1df;
+    background: var(--asset-color);
     display: var(--default-layout);
     flex-direction: var(--column-layout);
     align-items: var(--content-layout);
@@ -184,7 +183,7 @@ input[type=search] {
     letter-spacing: 1px;
     height: 48px;
     padding: .5rem .75rem;
-    text-transform: uppercase;
+    text-transform: var(--cta-text);
     transition: var(--transition-time);
     width: 120px;
 }
