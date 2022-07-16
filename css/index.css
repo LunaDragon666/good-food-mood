@@ -46,7 +46,7 @@
 }
 
 .cta {
-    background: #097850;
+    background: var(--cta-color);
     color: var(--unset-color) !important;
     cursor: var(--cursor-design);
     padding: var(--default-space);
@@ -108,14 +108,14 @@ input[type=search] {
     margin-top: var(--subheading-space);
   }
 
-  .back-btn a {
+.back-btn a {
     color: #018354;
     font-weight: bold;
-  }
+}
 
-  .back-btn a:hover {
+.back-btn a:hover {
     text-decoration: var(--link-hover);
-  }
+}
 
 /* Category selector */
 .categories {
@@ -175,7 +175,7 @@ input[type=search] {
 
 /* Subscription button */
 .sub-btn {
-    background: #0e6c4c;
+    background: var(--cta-color);
     border: var(--default-text);
     color: var(--unset-color);
     cursor: var(--cursor-design);
@@ -194,43 +194,12 @@ input[type=search] {
 }
 
 /* Subscription confirmation */
-.confirmation {
-    background: #21b37e;
-    color: var(--unset-color);
-    margin-top: 2rem;
-    padding: .5rem 1rem 2rem 1rem;
-}
-
 .confirmation p {
     line-height: 14px;
 }
 
 .arrow-down {
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 20px solid #21b37e;
-    height: var(--unset);
     margin: 0 auto -3.5rem;
-    width: var(--unset);
-}
-
-/* Subscription error */
-.error-message {
-    background: #ffb8b8;
-    border: 1px solid #ff4949;
-    color: #ef0000;
-    padding: var(--default-space);
-}
-
-.sub-error {
-    display: var(--default-text);
-    color: #c30c0c;
-    border: 1px solid #c30c0c;
-    background: #ffdada;
-    font-size: 0.9rem;
-    margin: 1rem 0 -3rem;
-    padding: 5px;
-    text-align: left;
 }
 
 @media only screen and (max-width: 600px) {
@@ -248,9 +217,6 @@ input[type=search] {
     .sub-btn {
         height: 50px;
         margin-top: var(--default-space);
-    }
-    .sub-error {
-        margin: 1rem 0 0;
     }
     #subscribed {
         width: var(--content-width);
