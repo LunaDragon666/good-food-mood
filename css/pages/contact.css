@@ -4,7 +4,7 @@
 
 .textbox {
   background: #def1df;
-  color: #262626;
+  color: var(--content-color);
   margin: 1rem 0 2rem;
   padding: 1rem 1rem 3rem;
   max-width: 900px;
@@ -14,8 +14,8 @@
 /* Form validations */
 .contact-error {
   display: none;
-  color: #c30c0c;
-  border: 1px solid #c30c0c;
+  color: var(--warning-color);
+  border: 1px solid var(--warning-color);
   background: #ffdada;
   margin: -11px 0 10px 0;
   padding: 5px;
@@ -26,8 +26,8 @@
 }
 
 .form-confirmation {
-  background: #21b37e;
-  color: white;
+  background: var(--unset-color);
+  color: var(--unset-color);
   margin-top: 3rem;
   padding: 1.5rem;
 }
@@ -35,14 +35,14 @@
 /* */
 form {
   margin-bottom: 3rem;
-  text-align: center;
+  text-align: var(--content-layout);
 }
 
 input,
 select,
 textarea {
   border: 1px solid #c4c4c4;
-  font-family: inherit;
+  font-family: var(--input-text);
   margin: 10px 0 10px 0;
   padding: var(--default-space);
 }
@@ -55,42 +55,43 @@ textarea {
 .contact {
   max-width: 1000px;
   margin: 50px auto;
-  text-align: center;
+  text-align: var(--content-layout);
 }
 
 .form-wrapper {
-  display: flex;
+  display: var(--default-layout);
   text-align: left;
-  flex-direction: column;
+  flex-direction: var(--column-layout);
 }
 
 .form-wrapper > * {
   flex: 1;
-  display: flex;
-  flex-direction: column;
+  display: var(--default-layout);
+  flex-direction: var(--column-layout);
 }
 
 .msg-btn {
   background: #097850;
-  border: none;
-  border-radius: 0; /* iphone */
-  color: white;
-  cursor: pointer;
+  border: var(--default-text);
+  border-radius: var(--unset); 
+  color: var(--unset-color);
+  cursor: var(--cursor-design);
   height: 75px;
   letter-spacing: 2px;
   margin: 1.5rem 0 0 0;
   padding: var(--default-space);
   text-transform: uppercase;
   transition: var(--transition-time);
-  width: 100%;
+  width: var(--content-width);
 }
+
 .msg-btn:hover {
-  background: #032016;
+  background: var(--button-hover);
 }
 
 @media (min-width: 1024px) {
   .form-wrapper {
-    flex-direction: row;
+    flex-direction: var(--row-layout);
   }
   input,
   select,
@@ -109,8 +110,8 @@ textarea {
 }
 
 .arrow-down {
-  width: 0;
-  height: 0;
+  width: var(--unset);
+  height: var(--unset);
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   border-top: 20px solid #21b37e;
@@ -124,5 +125,5 @@ textarea {
 }
 
 .back:hover {
-  text-decoration: underline;
+  text-decoration: var(--link-hover);
 }
