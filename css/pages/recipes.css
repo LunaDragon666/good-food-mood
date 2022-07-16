@@ -14,7 +14,7 @@
 .card h2 {
   font-family: var(--primary-font);
   font-size: var(--paragraph-height);
-  text-transform: uppercase;
+  text-transform: var(--cta-text);
 }
 
 .card img {
@@ -32,7 +32,7 @@
 /* Back to home button */
 .home {
   color: var(--breadcrumb-color);
-  font-weight: bold;
+  font-weight: var(--marked-text);
 }
 
 .link-wrap {
@@ -53,14 +53,14 @@
   background: var(--unset-color);
   display: var(--default-layout);
   flex-direction: var(--column-layout);
-  justify-content: space-between;
+  justify-content: var(--white-space);
   padding: 2.5rem 3rem 4rem;
 }
 
 /* Recipe details from the card */
 .food-info {
   display: var(--default-layout);
-  flex-wrap: wrap;
+  flex-wrap: var(--content-stocking);
   flex-direction: var(--row-layout);
   gap: 10px;
   margin-bottom: 2rem;
@@ -68,13 +68,13 @@
 
 .tags {
   display: var(--default-layout);
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-wrap: var(--content-stocking);
+  justify-content: var(--white-space);
 }
 
 .tags div:first-child {
   display: var(--default-layout);
-  flex-wrap: wrap;
+  flex-wrap: var(--content-stocking);
   gap: 10px;
   margin-bottom: var(--unset);
 }
@@ -84,12 +84,12 @@
   color: var(--unset-color);
   font-size: 14px;
   padding: .5rem 1rem;
-  text-transform: uppercase;
+  text-transform: var(--cta-text);
 }
 
 /* MODAL STYLING */
 .thumbnail {
-  background: #c1efc2;
+  background: var(--tertiary-color);
   display: inline-block;
   height: 50px;
   overflow: hidden;
@@ -104,7 +104,7 @@
   color: var(--button-hover);
   cursor: var(--cursor-design);
   display: inline-block;
-  font-weight: bold;
+  font-weight: var(--marked-text);
   height: var(--column-width);
   overflow: hidden;
   width: var(--column-width);
@@ -150,7 +150,7 @@ input:checked ~ .modal-overlay {
 
 /* Modal zoom-out button */
 .close-btn i {
-  background: #c1efc2;
+  background: var(--tertiary-color);
   color: var(--content-color);
   cursor: pointer;
   font-size: var(--default-margin);
@@ -220,7 +220,7 @@ input:checked ~ .modal-overlay {
 }
 
 .recipe-instrucs {
-  font-weight: bold;
+  font-weight: var(--marked-text);
   margin-left: 1.25rem;
 }
 
