@@ -9,7 +9,7 @@
   }
 
 * {
-	box-sizing: border-box;
+	box-sizing: var(--border-box);
 	margin: var(--unset);
 	padding: var(--unset);
 }
@@ -30,6 +30,7 @@
     --unset-color: #ffffff;
     --warning-color: #c30c0c;
     /* Layout variables */
+    --border-box: border-box;
     --center-elements: 0 auto;
     --column-layout: column;
     --content-layout: center;
