@@ -1,4 +1,4 @@
-## Project Exam Resit 1
+## Project Exam 1
 
 ## Project Exam: Build a Foodie Website
 You have been tasked with creating a website called Good Food Mood which helps people to find recipes. The site is aimed at working people who are interested in eating healthy and interesting food, but don't have a lot of time to read recipe books. The site should feel fun and engaging for
